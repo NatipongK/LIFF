@@ -11,6 +11,7 @@
   <p id="version"><b>Version:</b> </p>
   <p id="isInClient"><b>isInClient:</b> </p>
   <p id="accessToken"><b>AccessToken:</b> </p>
+  <h1>User Data</h1>
   <img id="pictureUrl">
   <p id="userId"><b>userId:</b> </p>
   <p id="displayName"><b>displayName:</b> </p>
@@ -78,7 +79,7 @@
     function openWindow() {
       liff.openWindow({
         url: "https://line.me",
-        external: true
+        external: true //true เปิดจากภายนอก 
       })
     }
 
@@ -148,7 +149,7 @@
           getContext()
           // getFriendship()
           createUniversalLink()
-        } else {
+        } else { // กรณีเปิดใน external browser
           liff.login()
         }
       })

@@ -19,10 +19,6 @@
   <td id="displayName"></td>
 </tr>
 <tr>
-  <td>statusMessage</td>
-  <td id="statusMessage"></td>
-</tr>
-<tr>
   <td>decodedIDToken</td>
   <td id="decodedIDToken"></td>
 </tr>
@@ -45,7 +41,6 @@
       const profile = await liff.getProfile()
       document.getElementById("pictureUrl").src = profile.pictureUrl
       document.getElementById("userId").append(profile.userId)
-      document.getElementById("statusMessage").append(profile.statusMessage)
       document.getElementById("displayName").append(profile.displayName)
       document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
     }

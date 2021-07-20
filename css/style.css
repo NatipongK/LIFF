@@ -18,20 +18,19 @@
 }
 
 #displayName {
- text-align center;
- padding 0 padding-size 0.5rem;
- margin 0;
+ text-align: center;
+ padding-size: 0.5rem;
+ margin: 0;
 }
 
 #userId {
- text-align center;
- padding 0 padding-size 0.5rem;
- margin 0;
+ text-align: center;
+ padding-size: 0.5rem;
+ margin: 0;
 }
 
 #decodedIDToken {
- color lighten(font-color, 50%);
- text-align center;
- padding 0 padding-size 0.5rem;
+ text-align: center;
+ padding-size: 0.5rem;
  margin 0;
 }

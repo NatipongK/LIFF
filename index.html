@@ -105,15 +105,15 @@
       }
     }
 
-    function getContext() {
-      if (liff.getContext() != null) {
-        document.getElementById("type").append(liff.getContext().type)
-        document.getElementById("viewType").append(liff.getContext().viewType)
-        document.getElementById("utouId").append(liff.getContext().utouId)
-        document.getElementById("roomId").append(liff.getContext().roomId)
-        document.getElementById("groupId").append(liff.getContext().groupId)
-      }
-    }
+//     function getContext() {
+//       if (liff.getContext() != null) {
+//         document.getElementById("type").append(liff.getContext().type)
+//         document.getElementById("viewType").append(liff.getContext().viewType)
+//         document.getElementById("utouId").append(liff.getContext().utouId)
+//         document.getElementById("roomId").append(liff.getContext().roomId)
+//         document.getElementById("groupId").append(liff.getContext().groupId)
+//       }
+//     }
 
     async function getUserProfile() {
       const profile = await liff.getProfile()
@@ -132,16 +132,16 @@
       document.getElementById("isInClient").append(liff.isInClient())
       if (liff.isInClient()) {
         document.getElementById("os").style.display = "none"
-         document.getElementById("language").style.display = "none"
-      document.getElementById("version").style.display = "none"
-      document.getElementById("accessToken").style.display = "none"
-      document.getElementById("isInClient").style.display = "none".style.display = "none"
+        document.getElementById("language").style.display = "none"
+        document.getElementById("version").style.display = "none"
+        document.getElementById("accessToken").style.display = "none"
+        document.getElementById("isInClient").style.display = "none"
         document.getElementById("btnLogOut").style.display = "none"
-      } else {
         document.getElementById("btnMsg").style.display = "none"
         document.getElementById("btnScanCode").style.display = "none"
         document.getElementById("btnClose").style.display = "none"
-      }
+        
+      } 
     }
 
     async function main() {
@@ -150,7 +150,7 @@
         if (liff.isLoggedIn()) {
        getEnvironment()
           getUserProfile()
-          getContext()
+//           getContext()
 //           getFriendship()
           createUniversalLink()
         } else {

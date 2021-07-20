@@ -1,9 +1,20 @@
 
 #pictureUrl {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50px;
+   display: block;
+  margin: 0 auto;
+  width: 12%;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  box-pack: center;
+  box-align: center;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
 }
 
 #displayName {

@@ -131,6 +131,11 @@
       document.getElementById("accessToken").append(liff.getAccessToken())
       document.getElementById("isInClient").append(liff.isInClient())
       if (liff.isInClient()) {
+        document.getElementById("os").style.display = "none"
+         document.getElementById("language").style.display = "none"
+      document.getElementById("version").style.display = "none"
+      document.getElementById("accessToken").style.display = "none"
+      document.getElementById("isInClient").style.display = "none".style.display = "none"
         document.getElementById("btnLogOut").style.display = "none"
       } else {
         document.getElementById("btnMsg").style.display = "none"
@@ -143,7 +148,7 @@
       liff.ready.then(() => {
         document.getElementById("isLoggedIn").append(liff.isLoggedIn())
         if (liff.isLoggedIn()) {
-//           getEnvironment()
+       getEnvironment()
           getUserProfile()
           getContext()
 //           getFriendship()

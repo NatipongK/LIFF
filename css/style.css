@@ -1,4 +1,7 @@
-
+body{
+   background: rgb(88,253,255);
+   background: linear-gradient(0deg, rgba(88,253,255,1) 0%, rgba(250,129,237,1) 100%);
+}
 #pictureUrl {
    display: block;
   margin: 0 auto;

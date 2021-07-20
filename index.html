@@ -11,7 +11,7 @@
   <p id="displayName"><b>displayName:</b> </p>
   <p id="statusMessage"><b>statusMessage:</b> </p>
   <p id="decodedIDToken"><b>email:</b> </p>
-  <p id="isLoggedIn"><b>isLoggedIn:</b> </p>
+  
 
 
 
@@ -24,15 +24,7 @@
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
     
-    function getContext() {
-      if (liff.getContext() != null) {
-        document.getElementById("type").append(liff.getContext().type)
-        document.getElementById("viewType").append(liff.getContext().viewType)
-        document.getElementById("utouId").append(liff.getContext().utouId)
-        document.getElementById("roomId").append(liff.getContext().roomId)
-        document.getElementById("groupId").append(liff.getContext().groupId)
-      }
-    }
+    
     
     async function getUserProfile() {
       const profile = await liff.getProfile()
@@ -44,21 +36,13 @@
     }
     
 
-    function getEnvironment() {
-      document.getElementById("os").append(liff.getOS())
-      document.getElementById("language").append(liff.getLanguage())
-      document.getElementById("version").append(liff.getVersion())
-      document.getElementById("accessToken").append(liff.getAccessToken())
-      document.getElementById("isInClient").append(liff.isInClient())
-    }
 
     async function main() {
       liff.ready.then(() => {
-        document.getElementById("isLoggedIn").append(liff.isLoggedIn())
         if (liff.isLoggedIn()) {
-          getEnvironment()
+
           getUserProfile()
-          getContext()
+    
         } else {
           liff.login()
         }

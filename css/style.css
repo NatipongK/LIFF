@@ -2,7 +2,7 @@
 #pictureUrl {
    display: block;
   margin: 0 auto;
-  width: 12%;
+  width: 50%;
   display: -moz-box;
   display: -webkit-box;
   display: box;
@@ -23,6 +23,7 @@ h2 {
 
 p {
  text-align: center;
+   color: #F8F8FF;
 }
 
 

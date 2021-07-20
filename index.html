@@ -35,11 +35,19 @@
     }
     
 
+    function getEnvironment() {
+      document.getElementById("os").append(liff.getOS())
+      document.getElementById("language").append(liff.getLanguage())
+      document.getElementById("version").append(liff.getVersion())
+      document.getElementById("accessToken").append(liff.getAccessToken())
+      document.getElementById("isInClient").append(liff.isInClient())
+    }
 
     async function main() {
       liff.ready.then(() => {
         document.getElementById("isLoggedIn").append(liff.isLoggedIn())
         if (liff.isLoggedIn()) {
+          getEnvironment()
           getUserProfile()
         } else {
           liff.login()

@@ -7,13 +7,36 @@
 </head>
 <body>
   <br>
- 
+  <img id="pictureUrl">
  <div class="card">
-  <div class="container">
-    <img id="pictureUrl">
+  <div class="container"> 
   <h2 id="displayName"></h2>
   <p id="decodedIDToken"></p>
   <p id="userId">ID: </p>
+     <div class="row">
+      <div class="col-25">
+        <label for="fname">ชื่อ</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">นามสกุล</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="phone">เบอร์โทรศัพท์</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="phone" name="phone" maxlength="10" size="10">
+      </div>
+    </div>
   </div>
 </div>
   

@@ -22,14 +22,14 @@ body{
 }
 
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width: 50%;
-  border-radius: 5px;
-  margin: 0 auto;
-  float: none; 
-  margin-bottom: 10px;
-  background-color: #FFFFFF;
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 table, td, th {  
   text-align: left;

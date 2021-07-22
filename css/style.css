@@ -42,3 +42,8 @@ table {
 th, td {
   padding: 15px;
 }
+
+#tdhead{
+    text-align: right;
+  font-weight: bold;
+}

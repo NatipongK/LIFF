@@ -79,16 +79,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
   transform: translateY(4px);
 }
 
-#displayName {
-  font-size: 24px;
+p {
   text-align: center;
 }
-#decodedIDToken{
-  font-size: 24px;
-  text-align: center;
-}
-#userId{
-  font-size: 24px;
+
+h1 {
   text-align: center;
 }
 .center {

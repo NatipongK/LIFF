@@ -13,19 +13,13 @@
    
 <table>
   <tr>
-    <td>User Name</td>
     <td><p id="displayName"></p></td>
   </tr>
   <tr>
-    <td>Email</td>
     <td><p id="decodedIDToken"></p></td>
   </tr>
   <tr>
-    <td>User ID</td>
     <td><p id="userId"></p></td>
-  </tr>
-  <tr>
-<input type="radio" name="gender" value="female"> หญิง</td>
   </tr>
 </table>
 <br>
@@ -38,18 +32,20 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <div>
-  <form action="/action_page.php">
+  <form action="">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <br>
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <br>
     <label for="country">Country</label>
     <select id="country" name="country">
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
     </select>
-  
+    <br>
     <input type="submit" value="Submit">
   </form>
 </div>

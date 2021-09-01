@@ -60,7 +60,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .button {
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -68,7 +68,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   background-color: #04AA6D;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 3px #999;
   bottom: 0;
 }
 
@@ -76,7 +76,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .button:active {
   background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 3px #666;
   transform: translateY(4px);
 }
 

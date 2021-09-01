@@ -92,3 +92,21 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
+.cd-form .icon input, .cd-form .icon select, .cd-form .icon textarea {
+  padding-left: 54px !important;
+}
+.cd-form .user {
+  background: url("../img/cd-icon-user.svg") no-repeat 16px center;
+}
+.cd-form [required].user {
+  background: url("../img/cd-icon-user.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
+}
+
+.cd-form [required] {
+  background: url("../img/cd-required.svg") no-repeat top right;
+}
+
+.cd-form .error {
+  border-color: #e94b35 !important;
+}

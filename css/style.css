@@ -93,20 +93,58 @@ h1 {
   align-items: center;
 }
 
-.cd-form .icon input, .cd-form .icon select, .cd-form .icon textarea {
-  padding-left: 54px !important;
-}
-.cd-form .user {
-  background: url("../img/cd-icon-user.svg") no-repeat 16px center;
-}
-.cd-form [required].user {
-  background: url("../img/cd-icon-user.svg") no-repeat 16px center, url("../img/cd-required.svg") no-repeat top right;
+* {
+  box-sizing: border-box;
 }
 
-.cd-form [required] {
-  background: url("../img/cd-required.svg") no-repeat top right;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
-.cd-form .error {
-  border-color: #e94b35 !important;
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

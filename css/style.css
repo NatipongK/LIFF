@@ -157,6 +157,6 @@ input[type=submit]:hover {
 	height: 100% !important;
 }
 
-.UserInfo{
+h1.UserInfo{
   color: blue;
 }

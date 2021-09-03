@@ -6,17 +6,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- 
-  <br>
-  <img id="pictureUrl">
-   <br>
- 
-   
-<h1 id="displayName"></h1>
-   <p id="decodedIDToken"></p>
+    <br>
+    <img id="pictureUrl">
+    <br> 
+    <h1 id="displayName"></h1>
+    <p id="decodedIDToken"></p>
     <p id="userId"></p>
+    <br>
 
-<br>
 <div class="center">
 <button class="button" id="myBtn">ลงทะเบียน</button>
 </div>
@@ -27,7 +24,8 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <div class="container">
-      <form action="/action_page.php">
+      <form action=" ">
+        <h1 class="UserInfo">User Information</h1>
         <div class="row">
           <div class="">
             <label for="Card No.">Card No.</label>
@@ -154,7 +152,7 @@
           </div>
       </form>
     </div>
-   
+  
        </div>
       </div>
     </fieldset>
@@ -175,8 +173,6 @@
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
     
-    
-    
     async function getUserProfile() {
       const profile = await liff.getProfile()
       document.getElementById("pictureUrl").src = profile.pictureUrl
@@ -195,9 +191,7 @@
     async function main() {
       liff.ready.then(() => {
         if (liff.isLoggedIn()) {
-
-          getUserProfile()
-    
+          getUserProfile()  
         } else {
           liff.login()
         }
@@ -206,29 +200,20 @@
     }
     main()
 
+  
 
-
-    
-// Get the modal
 var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";

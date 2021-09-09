@@ -112,7 +112,7 @@
 
 #group_6 {
 	top: -19px;
-	left: 0px;
+	left: -10px;
 	width: 375px;
 	height: 243px;
 }
@@ -477,7 +477,11 @@
 #pictureUrl {
    display: block;
   margin: 0 auto;
-  width: 20%;
+  width: 30%;
+  top: 42px;
+	left: 27px;
+	width: 88px;
+	height: 85px;
   display: -moz-box;
   display: -webkit-box;
   display: box;

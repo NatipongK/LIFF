@@ -120,7 +120,7 @@
 #rectangle_1 {
 	top: 19px;
 	left: 0px;
-	width: 375px;
+	width: 500px;
 	height: 212px;
 	background:rgba(255,255,255,0);
 	background: -webkit-linear-gradient(-47.648088450439deg , rgba(6,48,255,255) 0%, rgba(86,113,248,255) 100%);
@@ -477,7 +477,7 @@
 #pictureUrl {
    display: block;
   margin: 0 auto;
-  width: 35%;
+  width: 20%;
   display: -moz-box;
   display: -webkit-box;
   display: box;

@@ -578,13 +578,7 @@
 	resize: vertical;
   }
  
-  input[type= checkbox] {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	resize: vertical;
-  }
+  
   input[type=submit] {
 	background-color: #4CAF50;
 	color: white;
@@ -605,12 +599,7 @@
 	padding: 20px;
   }
   
-  .col-25 {
-	float: left;
-	width: 25%;
-	margin-top: 6px;
-  }
-  
+
   .col-75 {
 	float: left;
 	width: 75%;

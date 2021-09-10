@@ -85,30 +85,160 @@
     </div>
 
 
-
-  
-  <!-- <br>
-  <img id="pictureUrl">
-   <br>
- 
-   
-<h1 id="displayName"></h1>
-   <p id="decodedIDToken"></p>
-    <p id="userId"></p>
-
-<br>
-<div class="center">
-<button class="button" id="myBtn">ลงทะเบียน</button>
-</div> -->
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <div class="modal-dialog fullscreen" role="document">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
     <div class="container">
+  
+      <a href="#myModal" role="button" class="btn btn-default" data-toggle="modal">Launch demo modal</a>
+    
+    <div id="topModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">แก้ไข</h3>
+      </div>
+      <div class="modal-body">
+        <form action=" ">
+          <div class="row">
+            <div class="">
+              <label for="Card No.">Card No.</label>
+            </div>
+            <div class="">
+              <input type="text" id="Card No." name="Card No." placeholder=""  disabled="disabled">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="">
+              <label for="Account No.">Account No.</label>
+            </div>
+            <div class="">
+              <input type="text" id="Account No." name="Account No." placeholder="" value="" disabled="disabled">
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="">
+              <label for="Contact No.">Contact No.</label>
+            </div>
+            <div class="">
+              <input type="text" id="Contact No." name="Contact No." placeholder="" value="" disabled="disabled">
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="">
+              <label for="Name">Name</label>
+            </div>
+            <div class="">
+              <input type="text" id="Name" name="Name" placeholder="" value="" disabled="disabled"> 
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="">
+              <label for="Address">Address</label>
+            </div>
+            <div class="">
+              <input type="text" id="Address" name="Address" placeholder="" value="" disabled="disabled">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="">
+              <label for="Address2">Address 2</label>
+            </div>
+            <div class="">
+              <input type="text" id="Address2" name="Address2" placeholder="">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="">
+              <label for="Mobile Phone No.">Mobile Phone No.</label>
+            </div>
+            <div class="">
+              <input type="number" id="Mobile Phone No." name="Mobile Phone No." placeholder="" value="" disabled="disabled">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="">
+              <label for="Email">Email</label>
+            </div>
+            <div class="">
+              <input type="email" id="Email" name="Email" placeholder="" value="" disabled="disabled">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="">
+              <label for="Gender">Gender</label>
+            </div>
+            <div class="">
+              <input type="checkbox" id="male" name="male" value="male">
+              <label for="male">Male</label>
+              <input type="checkbox" id="female" name="female" value="female">
+              <label for="female">female</label>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="">
+              <label for="Date">Date of Birth</label>
+            </div>
+            <div class="">
+              <input type="date" id="Date" name="Date" value="1965-01-13" placeholder="">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="">
+              <label for="Id Card No.">Id Card No.</label>
+            </div>
+            <div class="">
+              <input type="text" id="Id Card No." name="Id Card No." placeholder="" disabled="disabled">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="">
+              <label for="Blocked">Blocked</label>
+            </div>
+            <div class="">
+              <input type="checkbox" id="Blocked" name="Blocked" placeholder="" disabled="disabled">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="">
+              <label for="Scheme Code">Scheme Code</label>
+            </div>
+            <div class="">
+              <input type="text" id="Scheme Code" name="Scheme Code" placeholder="" value="" disabled="disabled">
+            </div>
+          </div>
+        
+          <br>
+          <div class="center">
+            <button id="myBtn"></button>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+    </div>
+    </div>
+      
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">User Information</h3>
+      </div>
       <form action=" ">
-        <h1 class="UserInfo">User Information</h1>
         <div class="row">
           <div class="">
             <label for="Card No.">Card No.</label>
@@ -234,153 +364,31 @@
           <button id="myBtn"></button>
           </div>
       </form>
-    </div>
-   
-       </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#topModal">Open Modal</button>
       </div>
-    </fieldset>
- </form>
-</div>
-<div id="myModal2" class="modal">
-  <div class="modal-dialog fullscreen" role="document">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="container">
-      <form action=" ">
-        <h1 class="UserInfo">แก้ไข</h1>
-        <div class="row">
-          <div class="">
-            <label for="Card No.">Card No.</label>
-          </div>
-          <div class="">
-            <input type="text" id="Card No." name="Card No." placeholder=""  disabled="disabled">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="">
-            <label for="Account No.">Account No.</label>
-          </div>
-          <div class="">
-            <input type="text" id="Account No." name="Account No." placeholder="" value="" disabled="disabled">
-          </div>
-        </div>
+    </div>
+    </div>
+    </div>
+      
+    </div>
   
-        <div class="row">
-          <div class="">
-            <label for="Contact No.">Contact No.</label>
-          </div>
-          <div class="">
-            <input type="text" id="Contact No." name="Contact No." placeholder="" value="" disabled="disabled">
-          </div>
-        </div>
-      
-        <div class="row">
-          <div class="">
-            <label for="Name">Name</label>
-          </div>
-          <div class="">
-            <input type="text" id="Name" name="Name" placeholder="" value="" required> 
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="">
-            <label for="Address">Address</label>
-          </div>
-          <div class="">
-            <input type="text" id="Address" name="Address" placeholder="" value="" required>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="">
-            <label for="Address2">Address 2</label>
-          </div>
-          <div class="">
-            <input type="text" id="Address2" name="Address2" placeholder="">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="">
-            <label for="Mobile Phone No.">Mobile Phone No.</label>
-          </div>
-          <div class="">
-            <input type="number" id="Mobile Phone No." name="Mobile Phone No." placeholder="" value="" required>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="">
-            <label for="Email">Email</label>
-          </div>
-          <div class="">
-            <input type="email" id="Email" name="Email" placeholder="" value="" required>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="">
-            <label for="Gender">Gender</label>
-          </div>
-          <div class="">
-            <input type="checkbox" id="male" name="male" value="male">
-            <label for="male">Male</label>
-            <input type="checkbox" id="female" name="female" value="female">
-            <label for="female">female</label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="">
-            <label for="Date">Date of Birth</label>
-          </div>
-          <div class="">
-            <input type="date" id="Date" name="Date" value="1965-01-13" placeholder="">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="">
-            <label for="Id Card No.">Id Card No.</label>
-          </div>
-          <div class="">
-            <input type="text" id="Id Card No." name="Id Card No." placeholder="" disabled="disabled">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="">
-            <label for="Blocked">Blocked</label>
-          </div>
-          <div class="">
-            <input type="checkbox" id="Blocked" name="Blocked" placeholder="" disabled="disabled">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="">
-            <label for="Scheme Code">Scheme Code</label>
-          </div>
-          <div class="">
-            <input type="text" id="Scheme Code" name="Scheme Code" placeholder="" value="" disabled="disabled">
-          </div>
-        </div>
-      
-        <br>
-        <div class="center">
-          <button class="button">ยืนยัน</button>
-          </div>
-      </form>
-    </div>
+  <!-- <br>
+  <img id="pictureUrl">
+   <br>
+ 
    
-       </div>
-      </div>
-    </fieldset>
- </form>
-</div>
+<h1 id="displayName"></h1>
+   <p id="decodedIDToken"></p>
+    <p id="userId"></p>
+
+<br>
+<div class="center">
+<button class="button" id="myBtn">ลงทะเบียน</button>
+</div> -->
+<!-- The Modal -->
+
   </div>
 </div>
 
@@ -427,30 +435,77 @@
 
     
 // Get the modal
-var modal = document.getElementById("myModal");
+(function($, window) {
+    'use strict';
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+    var MultiModal = function(element) {
+        this.$element = $(element);
+        this.modalCount = 0;
+    };
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+    MultiModal.BASE_ZINDEX = 1040;
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+    MultiModal.prototype.show = function(target) {
+        var that = this;
+        var $target = $(target);
+        var modalIndex = that.modalCount++;
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+        $target.css('z-index', MultiModal.BASE_ZINDEX + (modalIndex * 20) + 10);
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+        // Bootstrap triggers the show event at the beginning of the show function and before
+        // the modal backdrop element has been created. The timeout here allows the modal
+        // show function to complete, after which the modal backdrop will have been created
+        // and appended to the DOM.
+        window.setTimeout(function() {
+            // we only want one backdrop; hide any extras
+            if(modalIndex > 0)
+                $('.modal-backdrop').not(':first').addClass('hidden');
+
+            that.adjustBackdrop();
+        });
+    };
+
+    MultiModal.prototype.hidden = function(target) {
+        this.modalCount--;
+
+        if(this.modalCount) {
+           this.adjustBackdrop();
+
+            // bootstrap removes the modal-open class when a modal is closed; add it back
+            $('body').addClass('modal-open');
+        }
+    };
+
+    MultiModal.prototype.adjustBackdrop = function() {
+        var modalIndex = this.modalCount - 1;
+        $('.modal-backdrop:first').css('z-index', MultiModal.BASE_ZINDEX + (modalIndex * 20));
+    };
+
+    function Plugin(method, target) {
+        return this.each(function() {
+            var $this = $(this);
+            var data = $this.data('multi-modal-plugin');
+
+            if(!data)
+                $this.data('multi-modal-plugin', (data = new MultiModal(this)));
+
+            if(method)
+                data[method](target);
+        });
+    }
+
+    $.fn.multiModal = Plugin;
+    $.fn.multiModal.Constructor = MultiModal;
+
+    $(document).on('show.bs.modal', function(e) {
+        $(document).multiModal('show', e.target);
+    });
+
+    $(document).on('hidden.bs.modal', function(e) {
+        $(document).multiModal('hidden', e.target);
+    });
+}(jQuery, window));
+
 </script>
  
 </body>

@@ -47,7 +47,7 @@ body {
   /* Pseudo elements for icons */
   .btn:before {
 	font-family: 'FontAwesome';
-	speak: none;
+	/* speak: none; */
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;

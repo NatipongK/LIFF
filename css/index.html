@@ -1,0 +1,108 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+<body>
+ 
+
+  
+   <!-- <br>
+  <img id="pictureUrl">
+   <br> -->
+ 
+   
+<!-- <h1 id="displayName"></h1> -->
+   <!-- <p id="decodedIDToken"></p> -->
+    <!-- <p id="userId"></p>  -->
+
+    <div class="row py-5 px-4" >
+      <div class="col-md-5 mx-auto">
+          <!-- Profile widget -->
+          <div class="bg-white shadow rounded overflow-hidden">
+              <div class="px-4 pt-0 pb-4 cover">
+                  <div class="media align-items-end profile-head" id="card">
+                      <div class="profile mr-3"><img id="pictureUrl" alt="..." width="130" class="rounded mb-2 img-thumbnail"><</div>
+                      <div class="media-body mb-5 text-white">
+                          <h4 class="mt-0 mb-0" >ART</h4>       
+                          <p class="small mb-4" > <i class="fas fa-map-marker-alt mr-2">ID : 59592827</i></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="bg-light p-4 d-flex justify-content-end text-center">
+                
+              </div>
+              <div class="px-4 py-3">
+                 
+                  </div>
+              </div>
+              <div class="py-4 px-4">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                  </div>
+                  <br>
+                  <br>
+                
+                  <div class="row">       
+                    <button class="button">ข้อมูลสมาชิก</button>
+                    <button class="button">โปรโมชั่น</button>
+                    <button class="button">แลกพอยท์</button>
+                    <button class="button">ติดต่อ</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+ <!-- <script src="js/vconsole.min.js"></script>
+  <script>
+    var vConsole = new VConsole()
+    console.log("Check")
+  </script>  -->
+
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <script>
+    
+    
+    
+    async function getUserProfile() {
+      const profile = await liff.getProfile()
+      document.getElementById("pictureUrl").src = profile.pictureUrl
+      document.getElementById("userId").append(profile.userId)
+      document.getElementById("displayName").append(profile.displayName)
+      document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
+    }
+    
+    function openWindow() {
+      liff.openWindow({
+        url: "http://localhost:8080/BC160/",
+        external: true
+      })
+    }
+
+    async function main() {
+      liff.ready.then(() => {
+        if (liff.isLoggedIn()) {
+          getUserProfile()
+        } else {
+          liff.login()
+        }
+      })
+      await liff.init({ liffId: "1656217711-49Bo7QWy" })
+    }
+    main()
+
+
+
+
+
+</script>
+ 
+</body>
+</html>

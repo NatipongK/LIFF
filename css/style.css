@@ -13,7 +13,9 @@ body {
     /* background: linear-gradient(to right, #e96443, #904e95); */
  
 }
-
+.card{
+	border:  1px solid ;
+}
 .btn {
 	border: none;
 	font-family: 'Lato';

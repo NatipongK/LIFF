@@ -67,6 +67,7 @@
  
 <div class="container">
 
+
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -75,7 +76,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">ข้อมูลสมาชิก</h4>
+    
         </div>
         <div class="modal-body">
           <form action=" ">
@@ -203,12 +204,155 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" data-toggle="modal" data-target="#myModal_2">แก้ไขข้อมูลสมาชิก</button>
         </div>
       </div>
       
     </div>
   </div>
   
+
+  <div class="modal fade" id="myModal_2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+    
+        </div>
+        <div class="modal-body">
+          <form action=" ">
+            <div class="row">
+              <div class="">
+                <label for="Card No.">Card No.</label>
+              </div>
+              <div class="">
+                <input type="text" id="Card No." name="Card No." placeholder=""  disabled="disabled">
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="">
+                <label for="Account No.">Account No.</label>
+              </div>
+              <div class="">
+                <input type="text" id="Account No." name="Account No." placeholder="" value="" disabled="disabled">
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="">
+                <label for="Contact No.">Contact No.</label>
+              </div>
+              <div class="">
+                <input type="text" id="Contact No." name="Contact No." placeholder="" value="" disabled="disabled">
+              </div>
+            </div>
+          
+            <div class="row">
+              <div class="">
+                <label for="Name">Name</label>
+              </div>
+              <div class="">
+                <input type="text" id="Name" name="Name" placeholder="" value="" disabled="disabled"> 
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="">
+                <label for="Address">Address</label>
+              </div>
+              <div class="">
+                <input type="text" id="Address" name="Address" placeholder="" value="" disabled="disabled">
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="">
+                <label for="Address2">Address 2</label>
+              </div>
+              <div class="">
+                <input type="text" id="Address2" name="Address2" placeholder="" disabled="disabled">
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="">
+                <label for="Mobile Phone No.">Mobile Phone No.</label>
+              </div>
+              <div class="">
+                <input type="number" id="Mobile Phone No." name="Mobile Phone No." placeholder="" value="" disabled="disabled">
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="">
+                <label for="Email">Email</label>
+              </div>
+              <div class="">
+                <input type="email" id="Email" name="Email" placeholder="" value="" disabled="disabled">
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="">
+                <label for="Gender">Gender</label>
+              </div>
+              <div class="">
+                <input type="checkbox" id="male" name="male" value="male" disabled="disabled">
+                <label for="male">Male</label>
+                <input type="checkbox" id="female" name="female" value="female" disabled="disabled">
+                <label for="female">female</label>
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="">
+                <label for="Date">Date of Birth</label>
+              </div>
+              <div class="">
+                <input type="date" id="Date" name="Date" value="1965-01-13" placeholder="" disabled="disabled">
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="">
+                <label for="Id Card No.">Id Card No.</label>
+              </div>
+              <div class="">
+                <input type="text" id="Id Card No." name="Id Card No." placeholder="" disabled="disabled">
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="">
+                <label for="Blocked">Blocked</label>
+              </div>
+              <div class="">
+                <input type="checkbox" id="Blocked" name="Blocked" placeholder="" disabled="disabled">
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="">
+                <label for="Scheme Code">Scheme Code</label>
+              </div>
+              <div class="">
+                <input type="text" id="Scheme Code" name="Scheme Code" placeholder="" value="" disabled="disabled">
+              </div>
+            </div>
+          
+            </form> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" >บันทึก</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 </div>
  <!-- <script src="js/vconsole.min.js"></script>
   <script>

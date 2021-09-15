@@ -66,13 +66,6 @@ body {
 	resize: vertical;
   }
 
-  input[type=checkbox]{
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	resize: vertical;
-  }
 
   label {
 	padding: 12px 12px 12px 0;
@@ -124,4 +117,8 @@ body {
 	  width: 100%;
 	  margin-top: 0;
 	}
+  }
+
+  .container{
+	  background-color: white;
   }

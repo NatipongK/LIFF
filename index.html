@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
   <title>My LIFF App</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
@@ -18,15 +17,6 @@
 <body>
  
 
-  
-   <!-- <br>
-  <img id="pictureUrl">
-   <br> -->
- 
-   
-<!-- <h1 id="displayName"></h1> -->
-   <!-- <p id="decodedIDToken"></p> -->
-    <!-- <p id="userId"></p>  -->
 
     <div class="row py-5 px-4" >
       <div class="col-md-5 mx-auto">
@@ -34,8 +24,10 @@
           <div class="bg-white shadow rounded overflow-hidden">
               <div class="px-4 pt-0 pb-4 cover">
                   <div class="media align-items-end profile-head" id="card">
+                    <!-- User_Line_Picture -->
                       <div class="profile mr-3"><img id="pictureUrl" alt="..." width="130" class="rounded mb-2 img-thumbnail"></div>
                       <div class="media-body mb-5 text-white">
+                        <!-- User_Line_Name -->
                           <h4 class="mt-0 mb-0" id="displayName"></h4>       
                       </div>
                   </div>
@@ -45,23 +37,23 @@
          
               </div>
               <div class="py-4 px-4">
+                <br>
                   <div class="user_data">
                 <h4>ชื่อ-นามสกุล :</h4><br> 
                   <h4>ที่อยู่ :</h4><br> 
                     <h4>เบอร์ติดต่อ :</h4><br> 
                       <h4>อีเมล :</h4><br> 
                         <h4 id="userId">ID:</h4>
-
-                  </div> 
-               
+                </div> 
+               <br>
+              
                   <div class="center">     
                     <button class="button" data-toggle="modal" data-target="#myModal">จัดการข้อมูล</button>
                     <button class="button">โปรโมชั่น</button> 
                    </div>
                    <div class="center">  
                     <button class="button">แลกพอยท์</button>
-                    <button class="button">ติดต่อ</button>
-                
+                    <button class="button">ติดต่อ</button>               
                   </div>
               </div>
           </div>
@@ -69,11 +61,7 @@
   </div>
 
 
- 
-
-
-
-  <!-- Modal -->
+   <!-- Modal ข้อมูลสมาชิก-->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
@@ -220,7 +208,7 @@
     </div>
   </div>
   
-
+ <!-- Modal แก้ไขข้อมูลสมาชิก-->
   <div class="modal fade" id="myModal_2" role="dialog">
     <div class="modal-dialog">
     
@@ -370,9 +358,7 @@
 
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
-    
-    
-    
+   
     async function getUserProfile() {
       const profile = await liff.getProfile()
       document.getElementById("pictureUrl").src = profile.pictureUrl
@@ -381,13 +367,6 @@
       document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
     }
     
-    function openWindow() {
-      liff.openWindow({
-        url: "http://localhost:8080/BC160/",
-        external: true
-      })
-    }
-
     async function main() {
       liff.ready.then(() => {
         if (liff.isLoggedIn()) {
@@ -399,9 +378,6 @@
       await liff.init({ liffId: "1656217711-49Bo7QWy" })
     }
     main()
-
-
-  
 
 </script>
  

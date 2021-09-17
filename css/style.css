@@ -124,6 +124,6 @@
 	align-items: center;
   }
 
-  .user_data{
-	  background-color: #ccc;
+  h4{
+	  background-color: rgb(161, 161, 161);
   }

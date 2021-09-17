@@ -100,7 +100,7 @@
   .col-75 {
 	float: left;
 	width: 75%;
-	margin-top: 6px;
+	margin-top: 4px;
   }
   
 
@@ -129,5 +129,5 @@
   }
 
   .user_data{
-	  background-color: rgb(218, 218, 218);
+	  background-color: rgba(218, 218, 218, 0.548);
   }

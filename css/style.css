@@ -30,39 +30,43 @@
   
   input[type=text], select, textarea {
 	width: 100%;
-	padding: 12px 20px;
+	padding: 12px;
 	margin: 8px 0;
 	box-sizing: border-box;
 	border: none;
 	border-bottom: 2px solid rgb(43, 137, 224);
+	resize: vertical;
   }
   
   input[type=email]{
 	width: 100%;
-	padding: 12px 20px;
+	padding: 12px;
 	margin: 8px 0;
 	box-sizing: border-box;
 	border: none;
 	border-bottom: 2px solid rgb(43, 137, 224);
+	resize: vertical;
   }
 
   input[type=number]{
 	width: 100%;
-	padding: 12px 20px;
+	padding: 12px;
 	margin: 8px 0;
 	box-sizing: border-box;
 	border: none;
 	border-bottom: 2px solid rgb(43, 137, 224);
+	resize: vertical;
   }
 
   
   input[type=date]{
 	width: 100%;
-	padding: 12px 20px;
+	padding: 12px;
 	margin: 8px 0;
 	box-sizing: border-box;
 	border: none;
 	border-bottom: 2px solid rgb(43, 137, 224);
+	resize: vertical;
   }
 
 
@@ -129,5 +133,5 @@
   }
 
   .user_data{
-	  background-color: rgba(218, 218, 218, 0.548);
+	  background-color: rgb(218, 218, 218);
   }

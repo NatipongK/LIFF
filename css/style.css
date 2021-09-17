@@ -8,11 +8,6 @@
     background-repeat: no-repeat
 }
 
-body {
-   background-color: rgb(185, 220, 250);
-    /* background: linear-gradient(to right, #e96443, #904e95); */
- 
-}
 
 .button {
 	background-color: #2ECC71; /* Green */
@@ -104,14 +99,14 @@ body {
 	margin-top: 6px;
   }
   
-  /* Clear floats after the columns */
+
   .row:after {
 	content: "";
 	display: table;
 	clear: both;
   }
   
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
   @media screen and (max-width: 600px) {
 	.col-25, .col-75, input[type=submit] {
 	  width: 100%;
@@ -127,4 +122,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  }
+
+  .user_data{
+	  background-color: #ccc;
   }

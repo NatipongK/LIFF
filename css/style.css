@@ -133,5 +133,9 @@
   }
 
   .user_data{
-	  background-color: rgb(207, 230, 248);
+	  background-color: rgb(207, 222, 248);
+  }
+
+  body{
+	font-family: Arial, Helvetica, sans-serif;
   }

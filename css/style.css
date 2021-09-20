@@ -140,14 +140,6 @@
 	font-family: Arial, Helvetica, sans-serif;
   }
 
-  #logo {
-	background-image: url(http://www.avision.co.th/2017/HTML/img/logo_icon.jpg);
-	display: block;
-	margin: 0 auto;
-	text-indent: -9999px;
-	width: 981px;
-	height: 180px;
-  }
   
 .container{
 	background-color: rgb(175, 202, 250);

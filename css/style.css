@@ -134,6 +134,7 @@
 
   .user_data{
 	  background-color: rgb(207, 222, 248);
+	  border-radius: 5px;
   }
 
   body{

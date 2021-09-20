@@ -139,3 +139,10 @@
   body{
 	font-family: Arial, Helvetica, sans-serif;
   }
+
+  .modal-body{
+	background-color: rgb(50, 122, 245);
+}
+.container{
+	background-color: rgb(175, 202, 250);
+}

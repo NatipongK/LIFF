@@ -1,6 +1,6 @@
 
   #pictureUrl {
-	 display: block;
+	display: block;
 	margin: 0 auto;
 	width: 40%;
 	display: -moz-box;
@@ -12,9 +12,6 @@
 	-webkit-box-align: center;
 	box-pack: center;
 	box-align: center;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
-	border-radius: 100px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
@@ -47,10 +44,8 @@
 
 
    .user_data{
-	background: rgb(22,2,126);
-	background: linear-gradient(0deg, rgba(22,2,126,0.5606617647058824) 0%,
-	 rgba(0,90,254,0.5606617647058824) 23%,
-	 rgba(169,240,255,0.7679446778711485) 100%);
+	background: #3A2F8F;
+	color: white;
 		border-radius: 5px;
 	}  
 

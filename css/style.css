@@ -48,14 +48,15 @@
 	background: #3A2F8F;
 	padding: 2px;
 	color: white;
-		
+	width: 380px;
+	border-radius: 5px;
 	}  
 
-	.card{
+	/* .card{
 		background: #3A2F8F;
 		width: 380px;
 		border-radius: 5px;
-		}  
+		}   */
 
 	.center {
 		display: flex;

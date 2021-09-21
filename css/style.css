@@ -1,7 +1,4 @@
-body{
-	background: rgb(213,255,255);
-	 background: linear-gradient(0deg, rgba(213,255,255,1) 35%, rgba(250,129,237,1) 96%);
-  }
+
   #pictureUrl {
 	 display: block;
 	margin: 0 auto;
@@ -53,3 +50,9 @@ body{
 		background-color: rgb(72, 161, 245);
 		border-radius: 5px;
 	}  
+
+	.center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }

@@ -46,11 +46,16 @@
 
    .user_data{
 	background: #3A2F8F;
-	width: 400px;
 	padding: 5px;
 	color: white;
-		border-radius: 5px;
+		
 	}  
+
+	.card{
+		background: #3A2F8F;
+		width: 300px;
+		border-radius: 5px;
+		}  
 
 	.center {
 		display: flex;

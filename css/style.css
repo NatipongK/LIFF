@@ -1,4 +1,6 @@
-
+body{
+background-color: #EAF2F8;
+}
   #pictureUrl {
 	 display: block;
 	margin: 0 auto;
@@ -28,7 +30,7 @@
   
   
   .button {
-	  background-color: #2ECC71; /* Green */
+	  background-color: #3A2F8F; 
 	  border: none;
 	  width: 150px;
 	  border-radius: 6px;

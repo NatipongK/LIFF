@@ -47,7 +47,10 @@
 
 
    .user_data{
-		background-color: rgb(72, 161, 245);
+	background: rgb(22,2,126);
+	background: linear-gradient(0deg, rgba(22,2,126,0.5606617647058824) 0%,
+	 rgba(0,90,254,0.5606617647058824) 23%,
+	 rgba(169,240,255,0.7679446778711485) 100%);
 		border-radius: 5px;
 	}  
 

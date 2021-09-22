@@ -117,4 +117,26 @@
 function myFunction() {
   location.replace("https://natipongk.github.io/LIFF/index.html")
 }
+
+
 </script>
+
+<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <script>
+
+    
+  
+    async function main() {
+      liff.ready.then(() => {
+        if (liff.isLoggedIn()) {
+
+          getUserProfile()
+    
+        } else {
+          liff.login({redirectuURL:"https://natipongk.github.io/LIFF/newpage.html"})
+        }
+      })
+      await liff.init({ liffId: "1656217711-49Bo7QWy" })
+    }
+    main()
+  </script>

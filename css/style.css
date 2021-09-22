@@ -50,11 +50,12 @@ background-color: #ffff;
 	background: #3A2F8F;
 	padding: 2px;
 	color: white;
-	width: 80%;
+	width: 85%;
 	border-radius: 6px;
 	}  
 
 	.title{
+		font-weight: bold;
 		font-size: 20px;
 		color: white;
 	}
@@ -65,10 +66,12 @@ background-color: #ffff;
 	}
 
 	.head{
-		width: 80%;
+		width: 85%;
 		background: #3A2F8F;
 		color: white;
 		text-align: center;
+		border-radius: 6px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 	/* .card{
 		background: #3A2F8F;

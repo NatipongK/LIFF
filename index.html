@@ -57,7 +57,7 @@
 
 <div>
     <div class="center">     
-      <button class="button" >จัดการข้อมูลสมาชิก</button>
+      <button class="button" onclick="myFunction()">จัดการข้อมูลสมาชิก</button>
       <button class="button">โปรโมชั่น</button> 
     </div>
     <div class="center">  
@@ -65,13 +65,24 @@
       <button class="button">ติดต่อ</button>  
     </div>
 </div>  
+<div id="myDIV">
 
-<a href="https://liff.line.me/1656217711-49Bo7QWy" target="demo">Link</a> 
+  This is my DIV element.
+  </div>
+
 
 </div>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
-    
+    function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
     async function getUserProfile() {
       const profile = await liff.getProfile()
       document.getElementById("pictureUrl").src = profile.pictureUrl

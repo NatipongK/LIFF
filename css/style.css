@@ -55,20 +55,19 @@ background-color: #ffff;
 	}  
 
 	.title{
-		width: 20px;
 		font-size: 20px;
 		color: white;
 	}
 
 	.data{
 		font-size: 18px;
-		color: rgb(206, 206, 206);
+		color: white;
 	}
 
 	.head{
-		width: 80%;
 		background: #3A2F8F;
 		color: white;
+		text-align: center;
 	}
 	/* .card{
 		background: #3A2F8F;

@@ -50,10 +50,16 @@ background-color: #EAF2F8;
 	background: #3A2F8F;
 	padding: 2px;
 	color: white;
-	width: 480px;
+	width: 85%;
 	border-radius: 5px;
 	}  
 
+	.h2{
+
+		color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	}
 	/* .card{
 		background: #3A2F8F;
 		width: 380px;

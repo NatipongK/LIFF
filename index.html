@@ -57,17 +57,16 @@
 
 <div>
     <div class="center">     
-      <button class="button" >จัดการข้อมูลสมาชิก</button>
+      <button class="button" >จัดการข้อมูล</button>
       <button class="button">โปรโมชั่น</button> 
     </div>
     <div class="center">  
       <button class="button">แลกพอยท์</button>
       <button class="button">ติดต่อ</button>  
-      <!-- <a href="newpage.html" target="demo">Change Link</a>              -->
     </div>
 </div>  
 
-
+<a href="newpage.html" target="demo">Change Link</a> 
 
 </div>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
@@ -88,7 +87,7 @@
           getUserProfile()
     
         } else {
-          liff.login()
+          liff.login( {redirectURL:"https://natipongk.github.io/LIFF/newpage"})
         }
       })
       await liff.init({ liffId: "1656217711-49Bo7QWy" })

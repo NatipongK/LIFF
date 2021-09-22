@@ -19,9 +19,10 @@ background-color: #ffff;
   
   
   input[type=text], select {
-	width: 100%;
-	padding: 12px 20px;
+	width: 90%;
+	height: 25px;
 	margin: 8px 0;
+	padding: 5px;
 	display: inline-block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -29,9 +30,9 @@ background-color: #ffff;
   }
     
   input[type=number]{
-	width: 80%;
-	height: 20px;
-	padding: 12px 20px;
+	width: 90%;
+	height: 25px;
+	padding: 5px;
 	margin: 8px 0;
 	display: inline-block;
 	border: 1px solid #ccc;
@@ -40,9 +41,9 @@ background-color: #ffff;
   }
 
   input[type=email]{
-	width: 80%;
-	height: 20px;
-	padding: 12px 20px;
+	width: 90%;
+	height: 25px;
+	padding: 5px;
 	margin: 8px 0;
 	display: inline-block;
 	border: 1px solid #ccc;

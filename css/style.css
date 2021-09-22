@@ -50,20 +50,25 @@ background-color: #ffff;
 	background: #3A2F8F;
 	padding: 2px;
 	color: white;
-	width: 75%;
+	width: 80%;
 	border-radius: 6px;
 	}  
 
-	.title
-	{
+	.title{
+		width: 20px;
 		font-size: 20px;
 		color: white;
 	}
 
-	.data
-	{
+	.data{
 		font-size: 18px;
 		color: rgb(206, 206, 206);
+	}
+
+	.head{
+		width: 80%;
+		background: #3A2F8F;
+		color: white;
 	}
 	/* .card{
 		background: #3A2F8F;

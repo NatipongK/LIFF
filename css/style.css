@@ -32,7 +32,7 @@ background-color: #ffff;
   .button {
 	  background-color: #3A2F8F; 
 	  border: none;
-	  width: 180px;
+	  width: 160px;
 	  border-radius: 6px;
 	  color: white;
 	  padding: 15px 32px;
@@ -62,18 +62,18 @@ background-color: #ffff;
 
 	.title{
 		font-weight: bold;
-		font-size: 18px;
+		font-size: 16px;
 		color: white;
 	}
 
 	.data{
-		font-size: 18px;
+		font-size: 16px;
 		color: white;
 	}
 
 	.head{
 		width: 85%;
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: bold;
 		background: #3A2F8F;
 		color: white;

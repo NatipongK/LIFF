@@ -1,34 +1,15 @@
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+        <title>My LIFF App</title>
+        <link rel="stylesheet" href="css/style.css">
+      </head>
 <body>
 
 <h2>HTML Iframes</h2>
-<h2 id="displayName"></h2>  
+
 
 </body>
 </html>
 
-<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-<script>
-  
-  async function getUserProfile() {
-    const profile = await liff.getProfile()
-    document.getElementById("pictureUrl").src = profile.pictureUrl
-    document.getElementById("userId").append(profile.userId)
-    document.getElementById("displayName").append(profile.displayName)
-    document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
-  }
-  
-  async function main() {
-    liff.ready.then(() => {
-      if (liff.isLoggedIn()) {
-
-        getUserProfile()
-  
-      } else {
-        liff.login( {redirectURL:"https://natipongk.github.io/LIFF/newpage.html"})
-      }
-    })
-    await liff.init({ liffId: "1656217711-49Bo7QWy" })
-  }
-  main()
-</script>

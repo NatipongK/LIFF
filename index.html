@@ -66,12 +66,14 @@
     </div>
 </div>  
 
-
+<button onclick="myFunction()">Replace document</button>
 
 </div>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
-    
+    function myFunction() {
+  location.replace("https://natipongk.github.io/LIFF/newpage.html")
+}
     async function getUserProfile() {
       const profile = await liff.getProfile()
       document.getElementById("pictureUrl").src = profile.pictureUrl

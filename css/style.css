@@ -20,7 +20,7 @@ background-color: #ffff;
   
   input[type=text], select {
 	width: 90%;
-	height: 25px;
+	height: 30px;
 	margin: 8px 0;
 	padding: 5px;
 	display: inline-block;
@@ -31,7 +31,7 @@ background-color: #ffff;
     
   input[type=number]{
 	width: 90%;
-	height: 25px;
+	height: 30px;
 	padding: 5px;
 	margin: 8px 0;
 	display: inline-block;
@@ -42,7 +42,7 @@ background-color: #ffff;
 
   input[type=email]{
 	width: 90%;
-	height: 25px;
+	height: 30px;
 	padding: 5px;
 	margin: 8px 0;
 	display: inline-block;

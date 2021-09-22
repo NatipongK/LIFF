@@ -62,7 +62,7 @@
     </div>
     <div class="center">  
       <button class="button">แลกพอยท์</button>
-      <button class="button">ติดต่อ</button>  
+      <button class="button" onclick="myFunction_2()" >ติดต่อ</button>  
     </div>
 </div>  
 
@@ -71,9 +71,15 @@
 </div>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
+
     function myFunction() {
   location.replace("https://natipongk.github.io/LIFF/newpage.html")
 }
+
+function myFunction_2() {
+  location.replace("https://natipongk.github.io/LIFF/contact.html")
+}
+
     async function getUserProfile() {
       const profile = await liff.getProfile()
       document.getElementById("pictureUrl").src = profile.pictureUrl

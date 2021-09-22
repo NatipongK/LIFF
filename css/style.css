@@ -1,5 +1,5 @@
 body{
-background-color: #EAF2F8;
+background-color: #ffff;
 }
   #pictureUrl {
 	 display: block;
@@ -54,20 +54,7 @@ background-color: #EAF2F8;
 	border-radius: 6px;
 	}  
 
-	.head{
-		background-color: #3A2F8F; 
-		border: none;
-		width: 75%;
-		border-radius: 6px;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		margin: 4px 8px;
-		cursor: pointer;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	}
+	
 	/* .card{
 		background: #3A2F8F;
 		width: 380px;

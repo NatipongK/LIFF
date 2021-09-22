@@ -41,7 +41,7 @@ background-color: #ffff;
 	  display: inline-block;
 	  margin: 4px 8px;
 	  cursor: pointer;
-	  font-size: 14px;
+	  font-size: 16px;
 	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 
@@ -54,7 +54,17 @@ background-color: #ffff;
 	border-radius: 6px;
 	}  
 
-	
+	.title
+	{
+		font-size: 20px;
+		color: white;
+	}
+
+	.data
+	{
+		font-size: 18px;
+		color: rgb(206, 206, 206);
+	}
 	/* .card{
 		background: #3A2F8F;
 		width: 380px;

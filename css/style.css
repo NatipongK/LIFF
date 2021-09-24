@@ -91,9 +91,9 @@ input[type="email"] {
 }
 
 .user_data_2 {
-  background: #3a2f8f;
+  background: #ffffff;
   padding: 2px;
-  color: white;
+  /* color: white; */
   width: 85%;
   border-radius: 6px;
 }
@@ -108,7 +108,7 @@ input[type="email"] {
 
 .data {
   font-size: 16px;
-  color: white;
+  color: black;
 }
 
 .head {

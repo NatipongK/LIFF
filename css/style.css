@@ -118,14 +118,25 @@ background-color: #ffff;
 		align-items: center;
 	  }
 
-	  .content{
+	  .topic{
+		margin: 14px;
+		text-align: center;
+		font-weight: bold;
+	  }
+
+	  .text-one{
 		margin: 14px;
 		text-align: center;
 		
 	  }
-	  .content .left-side .details i{
+	  .icon_contact{
 		font-size: 30px;
 		color: #3e2093;
-		margin-bottom: 10px;
+		margin-bottom: 50px 50px;
+		padding: 30px 20px;
+	  }
+
+	  .i {
+		display: inline-block;
 	  }
 	  

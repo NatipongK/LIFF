@@ -1,142 +1,140 @@
-body{
-background-color: #ffff;
+/* พื้นหลัง */
+body {
+  background-color: #ffff;  /* สีพื้นหลัง */
 }
-  #pictureUrl {
-	 display: block;
-	margin: 0 auto;
-	width: 40%;
-	display: -moz-box;
-	display: -webkit-box;
-	display: box;
-	-moz-box-pack: center;
-	-moz-box-align: center;
-	-webkit-box-pack: center;
-	-webkit-box-align: center;
-	box-pack: center;
-	box-align: center;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  
-  input[type=text], select {
-	width: 90%;
-	height: 30px;
-	margin: 8px 0;
-	padding: 5px;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-  }
-    
-  input[type=number]{
-	width: 90%;
-	height: 30px;
-	padding: 5px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-  }
 
-  input[type=email]{
-	width: 90%;
-	height: 30px;
-	padding: 5px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-  }
-  
-  
-  .button {
-	  background-color: #3A2F8F; 
-	  border: none;
-	  width: 115px;
-	  border-radius: 6px;
-	  color: white;
-	  padding: 15px 20px;
-	  text-align: center;
-	  text-decoration: none;
-	  display: inline-block;
-	  margin: 4px 8px;
-	  cursor: pointer;
-	  font-size: 14px;
-	  font-weight: bold;
-	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	  box-sizing: content-box;
-	  height: 30px;
-	}
+/* ภาพผู้ใช้ไลน์ */
+#pictureUrl {
+  display: block;
+  margin: 0 auto;
+  width: 40%; /* ขนาดรูป */
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  box-pack: center;
+  box-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  /* ลักษณะของเงา */
+}
 
-	.button:active {
-		background: #302675;
-		transform: translateY(4px);
-		 transform: translateX(4px);
-	  }
+/* ช่องใส่ข้อมูลผู้ใช้ */
 
-   .user_data{
-	background: #3A2F8F;
-	padding: 2px;
-	color: white;
-	width: 85%;
-	border-radius: 6px;
-	}  
+input[type="text"] {
+  width: 90%; /* ความกว้าง */
+  height: 30px; /* ความสูง */
+  margin: 8px 0;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* ความโค้ง */
+  box-sizing: border-box;
+}
 
-	.title{
-		font-weight: bold;
-		font-size: 16px;
-		color: white;
-	}
+input[type="number"] {
+  width: 90%; /* ความกว้าง */
+  height: 30px; /* ความสูง */
+  padding: 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;  /* สีกรอบ */
+  border-radius: 4px; /* ความโค้ง */
+  box-sizing: border-box;
+}
 
-	.data{
-		font-size: 16px;
-		color: white;
-	}
+input[type="email"] {
+  width: 90%; /* ความกว้าง */
+  height: 30px; /* ความสูง */
+  padding: 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc; /* สีกรอบ */
+  border-radius: 4px; /* ความโค้ง */
+  box-sizing: border-box;
+}
 
-	.head{
-		width: 85%;
-		font-size: 16px;
-		font-weight: bold;
-		background: #3A2F8F;
-		color: white;
-		text-align: center;
-		border-radius: 6px;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	}
-	/* .card{
-		background: #3A2F8F;
-		width: 380px;
-		border-radius: 5px;
-		}   */
+/* ปุ่ม */
+.button {
+  background-color: #3a2f8f;
+  border: none;
+  width: 115px;
+  border-radius: 6px;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* ลักษณะของเงา */
+  box-sizing: content-box;
+  height: 30px;
+}
 
-	.center {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	  }
+.button:active {
+  background: #302675;
+  transform: translateY(4px);
+  transform: translateX(4px);
+}
 
-	  .topic{
-		margin: 14px;
-		text-align: center;
-		font-weight: bold;
-	  }
+/* ลักษณะของข้อผู้ใช้ */
+.user_data {
+  /* background: #3a2f8f; */
+  padding: 2px;
+  /* color: white; */
+  width: 85%;
+  border-radius: 6px;
+}
 
-	  .text-one{
-		margin: 14px;
-		text-align: center;
-		
-	  }
-	  .icon_contact{
-		font-size: 30px;
-		color: #3e2093;
-		margin-bottom: 50px 50px;
-		padding: 30px 20px;
-	  }
+/* ลักษณะของ*/
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
 
-	  .i {
-		display: inline-block;
-	  }
-	  
+.data {
+  font-size: 16px;
+  color: white;
+}
+
+.head {
+  width: 85%;
+  font-size: 16px;
+  font-weight: bold;
+  background: #3a2f8f;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* ลักษณะของเงา */
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topic {
+  margin: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.text {
+  margin: 14px;
+  text-align: center;
+}
+.icon_contact {
+  font-size: 30px;
+  color: #3e2093;
+  padding: 20px;
+}
+
+.i {
+  display: inline-block;
+}

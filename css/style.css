@@ -83,18 +83,27 @@ input[type="email"] {
 
 /* ลักษณะของข้อผู้ใช้ */
 .user_data {
-  /* background: #3a2f8f; */
+  background: #3a2f8f;
   padding: 2px;
-  /* color: white; */
+  color: white;
   width: 85%;
   border-radius: 6px;
 }
+
+.user_data_2 {
+  background: #3a2f8f;
+  padding: 2px;
+  color: white;
+  width: 85%;
+  border-radius: 6px;
+}
+
 
 /* ลักษณะของ*/
 .title {
   font-weight: bold;
   font-size: 16px;
-  color: white;
+  color: black;
 }
 
 .data {

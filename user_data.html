@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <title>My LIFF App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="center">
+      <div class="head">
+        <p>ข้อมูลสมาชิก</p>
+      </div>
+    </div>
+    <br>
+
+    <div class="center">
+      <div class="user_data">
+        <div>
+          <table style="width: 100%">
+            <tr>
+              <td class="title" style="width: 40%">Card No.</td>
+              <td class="data" style="width: 60%" id="card"></td>
+            </tr>
+            <tr>
+              <td class="title" style="width: 40%">Account No.</td>
+              <td class="data" style="width: 60%" id="account"></td>
+            </tr>
+            <tr>
+              <td class="title" style="width: 40%">Contact No.</td>
+              <td class="data" style="width: 60%" id="contact"></td>
+            </tr>
+            <tr>
+              <td class="title" style="width: 40%">Id Card No.</td>
+              <td class="data" style="width: 60%" id="id"></td>
+            </tr>
+            <tr>
+              <td class="title" style="width: 40%">Scheme Code</td>
+              <td class="data" style="width: 60%" id="scheme"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="center">
+      <div class="head">
+        <p>แก้ไขข้อมูลสมาชิก</p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="center">
+      <div class="user_data">
+        <form action=" ">
+          <div class="row">
+            <div class="col-25">
+              <label for="name">ชื่อ-นามสกุล</label>
+            </div>
+            <div class="center">
+              <input
+                type="text"
+                id="name"
+                name="name"
+     
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="address">ที่อยู่</label>
+            </div>
+            <div class="center">
+              <input
+                type="text"
+                id="address"
+                name="address"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="phone">เบอร์โทรศัพท์</label>
+            </div>
+            <div class="center">
+              <input
+                type="number"
+                id="phone"
+                name="phone"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="email">อีเมล</label>
+            </div>
+            <div class="center">
+              <input
+                type="email"
+                id="email"
+                name="email"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <br>
+
+    <div>
+      <div class="center">
+        <button class="button" onClick="history.go(-1); return false;">
+          ย้อนกลับ
+        </button>
+        <button class="button">ยืนยัน</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<script>
+  const txt = '{"card":"01", "account":"a01", "contact":"c01","id":"id01", "scheme":"s01","name":"สุขใจ มีสุข","phone":"0845649155", "email":"suujai@hotmail.com", "bdate":"10/05/1999"}'
+  const obj = JSON.parse(txt);
+  document.getElementById("card").innerHTML = obj.card ;
+  document.getElementById("account").innerHTML = obj.account;
+  document.getElementById("contact").innerHTML = obj.contact;
+  document.getElementById("id").innerHTML = obj.id;
+  document.getElementById("scheme").innerHTML = obj.scheme;
+  document.getElementById("name").innerHTML = obj.name;
+  document.getElementById("phone").innerHTML = obj.phone;
+  document.getElementById("email").innerHTML = obj.email;
+  </script>

@@ -1,106 +1,99 @@
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-  <title>My LIFF App</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <title>My LIFF App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div>
+      <div class="center">
+        <img src="logo/logo.png" width="90%" height="140" />
+      </div>
 
-  <div>
+      <br>
 
-<div class="center"> 
-  <img src="logo/logo.png"  width="90%" height="140">
-</div>
-  
-<br>
+      <div class="center">
+        <div class="head">
+          <p>Avision LIFF</p>
+        </div>
+      </div>
 
-<div class="center">
-  <div class="head">
-          <p> Avision LIFF</p>
-  </div>
-</div>
-  
-<br>
+      <br>
 
-<div>
-  <img id="pictureUrl">
-</div>
-  
-<br>
-<div class="center">
-    <div class="user_data">
       <div>
-            <table style="width:100%">
+        <img id="pictureUrl" />
+      </div>
+
+      <br>
+      <div class="center">
+        <div class="user_data">
+          <div>
+            <table style="width: 100%">
               <tr>
-                <td class="title" style="width:40%">ชื่อ-นามสกุล</td>
-                <td class="data"  style="width:60%">สุขใจ มีสุข</td>
+                <td class="title" style="width: 40%">ชื่อ-นามสกุล</td>
+                <td class="data" style="width: 60%">สุขใจ มีสุข</td>
               </tr>
               <tr>
-                <td class="title" style="width:40%">วันเดือนปีเกิด</td>
-                <td class="data" style="width:60%">12 กันยายน 1956</td>
+                <td class="title" style="width: 40%">วันเดือนปีเกิด</td>
+                <td class="data" style="width: 60%">12 กันยายน 1956</td>
               </tr>
               <tr>
-                <td class="title" style="width:40%">เบอร์โทรศัพท์</td>
-                <td class="data" style="width:60%">0845649155</td>
+                <td class="title" style="width: 40%">เบอร์โทรศัพท์</td>
+                <td class="data" style="width: 60%">0845649155</td>
               </tr>
               <tr>
-                <td class="title" style="width:40%">อีเมล</td>
-                <td class="data" style="width:60%">suujai@hotmail.com</td>
+                <td class="title" style="width: 40%">อีเมล</td>
+                <td class="data" style="width: 60%">suujai@hotmail.com</td>
               </tr>
             </table>
           </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div>
+        <div class="center">
+          <button class="button" onclick="location.href='user_data.html'">
+            จัดการข้อมูลสมาชิก
+          </button>
+          <button class="button">โปรโมชั่น</button>
+        </div>
+        <div class="center">
+          <button class="button">แลกพอยท์</button>
+          <button class="button" onclick="location.href='contact.html'">
+            ติดต่อ
+          </button>
+        </div>
+      </div>
     </div>
-</div>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script>
+      async function getUserProfile() {
+        const profile = await liff.getProfile();
+        document.getElementById("pictureUrl").src = profile.pictureUrl;
+        document.getElementById("userId").append(profile.userId);
+        document.getElementById("displayName").append(profile.displayName);
+        document
+          .getElementById("decodedIDToken")
+          .append(liff.getDecodedIDToken().email);
+      }
 
-<br>
-
-<div>
-    <div class="center">     
-      <button class="button"  onclick="location.href='newpage.html'" >จัดการข้อมูลสมาชิก</button>
-      <button class="button">โปรโมชั่น</button> 
-    </div>
-    <div class="center">  
-      <button class="button">แลกพอยท์</button>
-      <button class="button" onclick="location.href='contact.html'" >ติดต่อ</button>  
-    </div>
-</div>  
-
-
-
-</div>
-  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-  <script>
-
-    function myFunction() {
-  location.replace("https://natipongk.github.io/LIFF/newpage.html")
-}
-
-function myFunction_2() {
-  location.replace("https://natipongk.github.io/LIFF/contact.html")
-}
-
-    async function getUserProfile() {
-      const profile = await liff.getProfile()
-      document.getElementById("pictureUrl").src = profile.pictureUrl
-      document.getElementById("userId").append(profile.userId)
-      document.getElementById("displayName").append(profile.displayName)
-      document.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
-    }
-    
-    async function main() {
-      liff.ready.then(() => {
-        if (liff.isLoggedIn()) {
-
-          getUserProfile()
-    
-        } else {
-          liff.login( )
-        }
-      })
-      await liff.init({ liffId: "1656217711-49Bo7QWy" })
-    }
-    main()
-  </script>
-</body>
+      async function main() {
+        liff.ready.then(() => {
+          if (liff.isLoggedIn()) {
+            getUserProfile();
+          } else {
+            liff.login();
+          }
+        });
+        await liff.init({ liffId: "1656217711-49Bo7QWy" });
+      }
+      main();
+    </script>
+  </body>
 </html>

@@ -40,6 +40,11 @@
               <td class="title" style="width: 40%">Scheme Code</td>
               <td class="data" style="width: 60%" id="scheme"></td>
             </tr>
+            <tr>
+              <td class="title" style="width: 40%">เพศ</td>
+              <td class="data" style="width: 60%" id=""></td>
+            </tr>
+
           </table>
         </div>
       </div>
@@ -98,6 +103,26 @@
             </div>
           </div>
 
+          <div class="select-date">
+            <select id="select-day"></select>
+            <select id="select-month">
+                <option value="0">January
+                <option value="1">February
+                <option value="2">March
+                <option value="3">April
+                <option value="4">May
+                <option value="5">June
+                <option value="6">July
+                <option value="7">August
+                <option value="8">September
+                <option value="9">October
+                <option value="10">November
+                <option value="11">December
+            </select>
+            <select id="select-year"></select>
+          </div>
+
+
           <div class="row">
             <div class="col-25">
               <label for="email">อีเมล</label>
@@ -129,15 +154,69 @@
 
 
 <script>
-  const txt = '{"card":"01", "account":"a01", "contact":"c01","id":"id01", "scheme":"s01","name":"สุขใจ มีสุข", "address":"162 ต.นนน อ.เมิอง จ.กรุงเทพฯ","phone":"0845649155", "email":"suujai@hotmail.com", "bdate":"10/05/1999"}'
+  const txt = '{"card":"01", "account":"a01", "contact":"c01","id":"id01", "scheme":"s01","name":"สุขใจ มีสุข", "address":"162 ต.นนน อ.เมือง จ.กรุงเทพฯ","phone":"0845649155", "email":"suujai@hotmail.com", "bdate":"10/05/1999"}'
   const obj = JSON.parse(txt);
   document.getElementById("card").innerHTML = obj.card ;
   document.getElementById("account").innerHTML = obj.account;
   document.getElementById("contact").innerHTML = obj.contact;
   document.getElementById("id").innerHTML = obj.id;
-  document.getElementById("scheme").value = obj.scheme;
+  document.getElementById("scheme").innerHTML = obj.scheme;
   document.getElementById("name").value = obj.name;
   document.getElementById("address").value = obj.address;
   document.getElementById("phone").value = obj.phone;
   document.getElementById("email").value = obj.email;
   </script>
+
+
+<script>
+
+var daysInMonth = [31,28,31,30,31,30,31,31,30,31,30,31],
+    today = new Date(),
+    targetDate = new Date(1999, 11, 25); 
+
+setDate(targetDate);
+setYears(20) 
+
+$("#select-month").change(function() {
+  var monthIndex = $("#select-month").val();
+  setDays(monthIndex);
+});
+
+function setDate(date) {
+  setDays(date.getMonth());
+  $("#select-day").val(date.getDate());
+  $("#select-month").val(date.getMonth());
+  $("#select-year").val(date.getFullYear()); 
+}
+
+
+function setDays(monthIndex) {
+  var optionCount = $('#select-day option').length,
+      daysCount = daysInMonth[monthIndex];
+  
+  if (optionCount < daysCount) {
+    for (var i = optionCount; i < daysCount; i++) {
+      $('#select-day')
+        .append($("<option></option>")
+        .attr("value", i + 1)
+        .text(i + 1)); 
+    }
+  }
+  else {
+    for (var i = daysCount; i < optionCount; i++) {
+      var optionItem = '#select-day option[value=' + (i+1) + ']';
+      $(optionItem).remove();
+    } 
+  } 
+}
+
+function setYears(val) {
+  var year = 1990;
+  for (var i = 0; i < val; i++) {
+      $('#select-year')
+        .append($("<option></option>")
+        .attr("value", year + i)
+        .text(year + i)); 
+    }
+}
+</script>

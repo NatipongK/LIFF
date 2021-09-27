@@ -88,8 +88,9 @@ input[type="email"] {
   /* color: white; */
   width: 85%;
   border-radius: 6px;
-  border-style: solid;
-  border-color: #bbbbbb;
+  -webkit-box-shadow: 0 0 6px 4px rgb(122, 122, 122);
+   -moz-box-shadow: 0 0 6px 4px rgb(122, 122, 122);
+        box-shadow: 0 0 6px 4px rgb(122, 122, 122);
 }
 
 .user_data_2 {

@@ -286,3 +286,11 @@ input[type="email"] {
   background-color: #5cb85c;
   color: white;
 }
+
+
+div.ex3 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: auto;
+}

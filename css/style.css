@@ -59,7 +59,7 @@ select {
   width: 30%; /* ความกว้าง */
   height: 30px; /* ความสูง */
   padding: 5px;
-  margin: 8px 0;
+  margin: 8px 2px;
   display: inline-block;
   border: 1px solid #ccc; /* สีกรอบ */
   border-radius: 4px; /* ความโค้ง */

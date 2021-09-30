@@ -71,10 +71,10 @@ select {
 .button {
   background-color: #3a2f8f;
   border: none;
-  width: 110px;
+  width: 115px;
   border-radius: 6px;
   color: white;
-  padding: 15px 15px;
+  padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

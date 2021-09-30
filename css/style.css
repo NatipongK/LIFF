@@ -74,7 +74,7 @@ select {
   width: 110px;
   border-radius: 6px;
   color: white;
-  padding: 15px 20px;
+  padding: 15px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -93,7 +93,30 @@ select {
   transform: translateX(4px);
 }
 
+.btn-consen{
+  background-color: #3a2f8f;
+  border: none;
+  width: 90px;
+  border-radius: 6px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* ลักษณะของเงา */
+  box-sizing: content-box;
+  height: 20px;
+}
 
+.btn-consen:active {
+  background: #302675;
+  transform: translateY(4px);
+  transform: translateX(4px);
+}
 
 /* ลักษณะของข้อผู้ใช้ */
 .user_data {

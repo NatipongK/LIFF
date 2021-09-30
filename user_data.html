@@ -43,7 +43,7 @@
             </tr>
             <tr>
               <td class="title" style="width: 40%">เพศ</td>
-              <td class="data" style="width: 60%" id=""></td>
+              <td class="data" style="width: 60%" id="sex"></td>
             </tr>
 
           </table>
@@ -93,16 +93,43 @@
 
           <div class="row">
             <div class="col-25">
-              <label for="address">ที่อยู่</label>
+              <label for="address">แขวง/อำเภอ  </label>
             </div>
             <div class="center">
               <input
                 type="text"
-                id="address"
-                name="address"
+                id="address_1"
+                name="address_1"
               />
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="address">จังหวัด  </label>
+            </div>
+            <div class="center">
+              <input
+                type="text"
+                id="address_2"
+                name="address_2"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="postcode">รหัสไปรษณีย์</label>
+            </div>
+            <div class="center">
+              <input
+                type="number"
+                id="postcode"
+                name="postcode"
+              />
+            </div>
+          </div>
+
 
           <div class="row">
             <div class="col-25">
@@ -137,18 +164,18 @@
       </div>
     </div>
     <br>
-    <div class="center">
+    <div class="center">ยอมรับ
   <input type="checkbox" id="myCheck_1" name="consen 1" >
-  <a class="modal-button" href="#myModal1" >consen 1</a>
+  <a class="modal-button" href="#myModal1" >การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลทั่วไป</a>
 </div>
 
-<div class="center">
+<div class="center">ยอมรับ
   <input type="checkbox" id="myCheck_2"  name="consen 2" >
-  <a class="modal-button" href="#myModal2">consen 2</a>
+  <a class="modal-button" href="#myModal2">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลที่อ่อนไหว (Sensitive Personal Data)</a>
 </div>
-<div class="center">
+<div class="center">ยอมรับ
   <input type="checkbox" id="myCheck_3" name="consen 3" >
-  <a class="modal-button" href="#myModal3">consen 3</a>
+  <a class="modal-button" href="#myModal3">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลทั่วไป</a>
 </div>
      <br>
     <div>
@@ -156,7 +183,7 @@
         <button class="button" onClick="history.go(-1); return false;">
           ย้อนกลับ
         </button>
-        <button class="button">ยืนยัน</button>
+        <button class="button" >ยืนยัน</button>
       </div>
     </div>
   </form>
@@ -355,7 +382,6 @@ years('option', 1995, 2017);
   document.getElementById("id").innerHTML = obj.id;
   document.getElementById("scheme").innerHTML = obj.scheme;
   document.getElementById("name").value = obj.name;
-  document.getElementById("address").value = obj.address;
   document.getElementById("phone").value = obj.phone;
   document.getElementById("email").value = obj.email;
 

@@ -134,7 +134,9 @@ select {
   font-size: 14px;
   /* color: white; */
   width: 85%;
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

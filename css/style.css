@@ -64,6 +64,7 @@ select {
   border: 1px solid #ccc; /* สีกรอบ */
   border-radius: 4px; /* ความโค้ง */
   box-sizing: border-box;
+  background-color: #ffffff;
 }
 
 

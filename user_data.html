@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <form onsubmit='return onSubmit(this)'>
     <div class="center">
       <div class="head">
         <p>ข้อมูลสมาชิก</p>
       </div>
     </div>
     <br>
-
+  
     <div class="center">
       <div class="user_data">
         <div>
@@ -62,7 +63,7 @@
 
     <div class="center">
       <div class="user_data">
-        <form action=" ">
+      
           <div class="row">
             <div class="col-25">
               <label for="name">ชื่อ-นามสกุล</label>
@@ -132,21 +133,21 @@
               />
             </div>
           </div>
-        </form>
+        
       </div>
     </div>
     <br>
     <div class="center">
-  <input type="checkbox" id="myCheck_1"  >
+  <input type="checkbox" id="myCheck_1" name="consen 1" >
   <a class="modal-button" href="#myModal1" >consen 1</a>
 </div>
 
 <div class="center">
-  <input type="checkbox" id="myCheck_2"  >
+  <input type="checkbox" id="myCheck_2"  name="consen 2" >
   <a class="modal-button" href="#myModal2">consen 2</a>
 </div>
 <div class="center">
-  <input type="checkbox" id="myCheck_3"  >
+  <input type="checkbox" id="myCheck_3" name="consen 3" >
   <a class="modal-button" href="#myModal3">consen 3</a>
 </div>
      <br>
@@ -158,7 +159,7 @@
         <button class="button">ยืนยัน</button>
       </div>
     </div>
-
+  </form>
 
       
 
@@ -344,6 +345,7 @@ months('option');
 //You can change the startYear(1990) and endYear(2017)
 years('option', 1995, 2017);
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
   const txt = '{"card":"01", "account":"a01", "contact":"c01","id":"id01", "scheme":"s01","name":"สุขใจ มีสุข", "address":"162 ต.นนน อ.เมือง จ.กรุงเทพฯ","phone":"0845649155", "email":"suujai@hotmail.com", "bdate":"10/05/1999"}'
   const obj = JSON.parse(txt);
@@ -358,7 +360,12 @@ years('option', 1995, 2017);
   document.getElementById("email").value = obj.email;
 
 
+  function onSubmit( form ){
+  var data = JSON.stringify( $(form).serializeArray() ); //  <-----------
 
+  console.log( data );
+  return false; //don't submit
+}
 
 
 

@@ -5,14 +5,14 @@ body {
 
 .picture_user{
   width: 40%;
-  height: 140px;
+  height: 120px;
  
 }
 /* ภาพผู้ใช้ไลน์ */
 #pictureUrl {
 
   margin: 0 auto;
-  width: 100%; /* ขนาดรูป */
+  width: 80%; /* ขนาดรูป */
   display: -moz-box;
   display: -webkit-box;
   display: box;

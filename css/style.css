@@ -80,17 +80,17 @@ select {
   width: 115px;
   border-radius: 6px;
   color: white;
-  padding: 20px 20px;
+  padding: 15px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 8px;
+  margin: 4px 6px;
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* ลักษณะของเงา */
   box-sizing: content-box;
-  height: 30px;
+  height: 40px;
 }
 
 .button:active {

@@ -5,7 +5,7 @@ body {
 
 /* ภาพผู้ใช้ไลน์ */
 #pictureUrl {
-  display: block;
+
   margin: 0 auto;
   width: 40%; /* ขนาดรูป */
   display: -moz-box;
@@ -132,9 +132,12 @@ select {
 
 .consen {
   font-size: 14px;
-  /* color: white; */
   width: 80%;
-  
+}
+
+.contact {
+  font-size: 14px;
+  width: 80%;
 }
 
 

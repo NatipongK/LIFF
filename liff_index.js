@@ -1,6 +1,7 @@
 function getUserProfile() {
     liff.getProfile().then(profile => {
       document.getElementById("pictureUrl").src = profile.pictureUrl;//get user line picture
+      document.getElementById("displayName").innerHTML = profile.displayName;//get user line name
       document.getElementById("getDecodedIDToken").innerHTML = liff.getDecodedIDToken().email;//get user line email
     }).catch(err => console.error(err));
   }

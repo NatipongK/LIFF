@@ -23,7 +23,7 @@ function getUserProfile() {
   document.getElementById("sex").innerHTML = obj.sex;
   document.getElementById("name").value = obj.name;
   document.getElementById("phone").value = obj.phone;
-  document.getElementById("addres").value = obj.addres;
+  document.getElementById("addres").value = obj.address;
   document.getElementById("province").value = obj.province;
   document.getElementById("postcode").value = obj.postcode;
 

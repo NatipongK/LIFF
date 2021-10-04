@@ -77,24 +77,21 @@
 
 
 <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-<script>
-  async function getUserProfile() {
-    const profile = await liff.getProfile();
-    document.getElementById("pictureUrl").src = profile.pictureUrl//รูปภาพไลน์ของผู้ใช้งาน
-    document.getElementById("displayName").profile.displayName
-    ocument.getElementById("decodedIDToken").liff.getDecodedIDToken().email
-  }
 
-  // ตรวจสอบการเข้าถึงผ่านไลน์
-  async function main() {
-    liff.ready.then(() => {
-      if (liff.isLoggedIn()) {
-        getUserProfile()
-      } else {
-        liff.login()
-      }
-    });
-    await liff.init({ liffId: "1656217711-49Bo7QWy" })//LIFF ID
+<script>
+  function getUserProfile() {
+    liff.getProfile().then(profile => {
+      document.getElementById("pictureUrl").src = profile.pictureUrl;
+      document.getElementById("userId").innerHTML = profile.userId;
+      document.getElementById("displayName").innerHTML = profile.displayName;
+      document.getElementById("getDecodedIDToken").innerHTML = '<b>Email:</b> ' + liff.getDecodedIDToken().email;
+    }).catch(err => console.error(err));
   }
-  main()
+  liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {
+    if (liff.isLoggedIn()) {
+      getUserProfile()
+    } else {
+      liff.login();
+    }
+  }, err => console.error(err.code, error.message));
 </script>

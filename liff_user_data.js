@@ -26,13 +26,22 @@ function getUserProfile() {
   document.getElementById("address").value = obj.address;
   document.getElementById("province").value = obj.province;
   document.getElementById("postcode").value = obj.postcode;
+  document.getElementById("district").value = obj.district;
 
-  function onSubmit(form) {
-    var data = JSON.stringify($(form).serializeArray());
+  function handleSubmit(event) {
+    event.preventDefault();
 
-    console.log(data);
-    alert(data);
+    const data = new FormData(event.target);
+
+    const value = Object.fromEntries(data.entries());
+
+    console.log( value );
+
   }
+
+  const form = document.querySelector('form');
+  form.addEventListener('submit', handleSubmit);
+ 
 
 
 //   check_accept_consen1

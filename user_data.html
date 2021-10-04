@@ -45,7 +45,10 @@
               <td class="title" style="width: 40%">เพศ</td>
               <td class="data" style="width: 60%" id="sex"></td>
             </tr>
-
+            <tr>
+              <td class="title" style="width: 40%">LINE</td>
+              <td class="data" style="width: 60%" id="displayName"></td>
+            </tr>
           </table>
         </div>
       </div>
@@ -177,19 +180,19 @@
 
         <div class="row">
           <div class="col-25">
-            <label for="address">แขวง/อำเภอ </label>
+            <label for="district">แขวง/อำเภอ </label>
           </div>
           <div class="center">
-            <input type="text" id="address_1" name="address_1" />
+            <input type="text" id="district" name="district" />
           </div>
         </div>
 
         <div class="row">
           <div class="col-25">
-            <label for="address">จังหวัด </label>
+            <label for="province">จังหวัด </label>
           </div>
           <div class="center">
-            <input type="text" id="address_2" name="address_2" />
+            <input type="text" id="province" name="province" />
           </div>
         </div>
 
@@ -220,7 +223,7 @@
             <label for="email">อีเมล</label>
           </div>
           <div class="center">
-            <input type="email" id="email" name="email" />
+            <input type="email" id="decodedIDToken" name="email" />
           </div>
         </div>
 
@@ -271,7 +274,7 @@
         <h4>การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลทั่วไป</h4>
       </div>
       <div class="modal-body">
-        <div class="ex3">
+        <div class="detail">
           พิจารณาได้จากรูปแบบการดำเนินการ และวัตถุประสงค์การใช้ เก็บรวบรวมหรือเปิดเผยข้อมูลนั้น
           ซึ่งในแต่ละชุดข้อมูลก็มีรายละเอียดที่แตกต่างกัน ทั้งนี้ โดยหลักการตามกฎหมาย PDPA
           ระบุว่าให้ใช้ฐานความยินยอม (Consent) เป็นฐานหลักในการประมวลผลข้อมูล
@@ -353,7 +356,7 @@
         <h4>การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลที่อ่อนไหว (Sensitive Personal Data)</h4>
       </div>
       <div class="modal-body">
-        <div class="ex3">
+        <div class="detail">
           สำหรับการใช้ข้อมูลส่วนบุคคลที่อ่อนไหว เช่น ลายนิ้วมือ ประวัติการรักษา เทคโนโลยีจดจำใบหน้า (Facial Recognition)
           จะต้องใช้ตามวัตถุประสงค์ที่แจ้งไว้แต่แรกและต้องขอ consent ทุกครั้ง
           โดยการขอใช้หรือเก็บรวบรวมข้อมูลจะต้องมีความได้สัดส่วนและจำเป็น กล่าวคือ การใช้ข้อมูลส่วนบุคคลที่อ่อนไหว
@@ -406,7 +409,7 @@
         <h4>การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลทั่วไป</h4>
       </div>
       <div class="modal-body">
-        <div class="ex3">
+        <div class="detail">
           พิจารณาได้จากรูปแบบการดำเนินการ และวัตถุประสงค์การใช้ เก็บรวบรวมหรือเปิดเผยข้อมูลนั้น
           ซึ่งในแต่ละชุดข้อมูลก็มีรายละเอียดที่แตกต่างกัน ทั้งนี้ โดยหลักการตามกฎหมาย PDPA
           ระบุว่าให้ใช้ฐานความยินยอม (Consent) เป็นฐานหลักในการประมวลผลข้อมูล
@@ -496,14 +499,14 @@
   document.getElementById("scheme").innerHTML = obj.scheme;
   document.getElementById("name").value = obj.name;
   document.getElementById("phone").value = obj.phone;
-  document.getElementById("email").value = obj.email;
+
 
 
   function onSubmit(form) {
-    var data = JSON.stringify($(form).serializeArray()); //  <-----------
+    var data = JSON.stringify($(form).serializeArray());
 
     console.log(data);
-    return false; //don't submit
+    return false; 
   }
 
 
@@ -568,4 +571,25 @@
   }
 </script>
 
+<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+<script>
+  async function getUserProfile() {
+    const profile = await liff.getProfile();
+    document.getElementById("pictureUrl").src = profile.pictureUrl//รูปภาพไลน์ของผู้ใช้งาน
+    document.getElementById("displayName").append(profile.displayName)
+    ocument.getElementById("decodedIDToken").append(liff.getDecodedIDToken().email)
+  }
+
+  // ตรวจสอบการเข้าถึงผ่านไลน์
+  async function main() {
+    liff.ready.then(() => {
+      if (liff.isLoggedIn()) {
+        getUserProfile()
+      } else {
+        liff.login()
+      }
+    });
+    await liff.init({ liffId: "1656217711-49Bo7QWy" })//LIFF ID
+  }
+  main()
 </script>

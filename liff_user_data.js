@@ -31,7 +31,7 @@ function getUserProfile() {
     var data = JSON.stringify($(form).serializeArray());
 
     console.log(data);
-    return false; 
+    alert(data);
   }
 
 

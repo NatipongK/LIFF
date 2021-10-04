@@ -1,7 +1,7 @@
 function getUserProfile() {
     liff.getProfile().then(profile => {
-      document.getElementById("displayName").innerHTML = profile.displayName;
-      document.getElementById("getDecodedIDToken").innerHTML = liff.getDecodedIDToken().email;
+      document.getElementById("displayName").innerHTML = profile.displayName;//get user line name
+      document.getElementById("email").value = liff.getDecodedIDToken().email;//get line email
     }).catch(err => console.error(err));
   }
   liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {
@@ -33,27 +33,27 @@ function getUserProfile() {
   }
 
 
-
+//   check_accept_consen1
   function check_1() {
     document.getElementById("myCheck_1").checked = true;
   }
-
+//   check_not_accept_consen1
   function uncheck_1() {
     document.getElementById("myCheck_1").checked = false;
   }
-
+//   check_accept_consen2
   function check_2() {
     document.getElementById("myCheck_2").checked = true;
   }
-
+ //   check_not_accept_consen2
   function uncheck_2() {
     document.getElementById("myCheck_2").checked = false;
   }
-
+//   check_accept_consen3
   function check_3() {
     document.getElementById("myCheck_3").checked = true;
   }
-
+//   check_not_accept_consen3
   function uncheck_3() {
     document.getElementById("myCheck_3").checked = false;
   }

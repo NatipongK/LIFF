@@ -1,7 +1,7 @@
 function getUserProfile() {
     liff.getProfile().then(profile => {
-      document.getElementById("pictureUrl").src = profile.pictureUrl;
-      document.getElementById("getDecodedIDToken").innerHTML = liff.getDecodedIDToken().email;
+      document.getElementById("pictureUrl").src = profile.pictureUrl;//get user line picture
+      document.getElementById("getDecodedIDToken").innerHTML = liff.getDecodedIDToken().email;//get user line email
     }).catch(err => console.error(err));
   }
   liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {

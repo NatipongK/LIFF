@@ -13,17 +13,19 @@ function getUserProfile() {
   }, err => console.error(err.code, error.message));
 
 
-  const txt = '{"card":"01", "account":"a01", "contact":"c01","id":"id01", "scheme":"s01","name":"สุขใจ มีสุข", "address":"162 ต.นนน อ.เมือง จ.กรุงเทพฯ","phone":"0845649155", "email":"suujai@hotmail.com", "bdate":"10/05/1999"}'
+  const txt = '{"card":"01", "account":"a01", "contact":"c01","id":"id01", "scheme":"s01","name":"สุขใจ มีสุข", "address":"162 ต.บ้านสวน","phone":"0845649155", "sex":"ชาย", "district":"เมือง", "province":"ชลบุรี", "postcode":"20000"}'
   const obj = JSON.parse(txt);
   document.getElementById("card").innerHTML = obj.card;
   document.getElementById("account").innerHTML = obj.account;
   document.getElementById("contact").innerHTML = obj.contact;
   document.getElementById("id").innerHTML = obj.id;
   document.getElementById("scheme").innerHTML = obj.scheme;
+  document.getElementById("sex").innerHTML = obj.sex;
   document.getElementById("name").value = obj.name;
   document.getElementById("phone").value = obj.phone;
-
-
+  document.getElementById("addres").value = obj.addres;
+  document.getElementById("province").value = obj.province;
+  document.getElementById("postcode").value = obj.postcode;
 
   function onSubmit(form) {
     var data = JSON.stringify($(form).serializeArray());

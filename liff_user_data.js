@@ -22,7 +22,7 @@ function getUserProfileforUserData() {
   }, err => console.error(err.code, error.message));
 
 
-  const txt = '{"card":"01", "account":"a01", "contact":"c01","id":"id01", "scheme":"s01","name":"สุขใจ มีสุข", "address":"162 ต.บ้านสวน","phone":"0845649155", "sex":"ชาย", "district":"เมือง", "province":"ชลบุรี", "postcode":"20000"}'
+  const txt = '{"card":"01", "account":"a01", "contact":"c01","id":"id01", "scheme":"s01","name":"สุขใจ มีสุข","bdate":"1 มีนาคม 2000", "address":"162 ต.บ้านสวน","phone":"0845649155", "sex":"ชาย", "district":"เมือง", "province":"ชลบุรี", "postcode":"20000"}'
   const obj = JSON.parse(txt);
   document.getElementById("card").innerHTML = obj.card;
   document.getElementById("account").innerHTML = obj.account;
@@ -30,6 +30,10 @@ function getUserProfileforUserData() {
   document.getElementById("id").innerHTML = obj.id;
   document.getElementById("scheme").innerHTML = obj.scheme;
   document.getElementById("sex").innerHTML = obj.sex;
+  document.getElementById("name").innerHTML = obj.name;
+  document.getElementById("phone").innerHTML = obj.phone;
+  document.getElementById("bdate").innerHTML = obj.bdate;
+
   document.getElementById("name").value = obj.name;
   document.getElementById("phone").value = obj.phone;
   document.getElementById("address").value = obj.address;

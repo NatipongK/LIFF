@@ -1,6 +1,8 @@
 /* พื้นหลัง */
 body {
   background-color: #ffff;  /* สีพื้นหลัง */
+  margin: auto;
+  max-width: 500px;
 }
 
 /* ภาพผู้ใช้ไลน์ */
@@ -106,7 +108,7 @@ select#day {
 }
 
 /* ปุ่ม modal */
-.btn-consen{
+.btn-consent{
   background-color: #3a2f8f;/* สีพื้นหลัง */
   border: none;
   width: 90px;
@@ -125,7 +127,7 @@ select#day {
   height: 20px;
 }
 /* ปุ่มเคลื่อนไหว */
-.btn-consen:active {
+.btn-consent:active {
   background: #302675;/* สีพื้นหลัง */
   transform: translateY(4px);
   transform: translateX(4px);
@@ -140,8 +142,8 @@ select#day {
   border-radius: 6px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* ลักษณะของเงา */
 }
-/* consen  */
-.consen {
+/* consent  */
+.consent {
   font-size: 14px;
   width: 80%;
 }

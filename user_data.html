@@ -47,7 +47,7 @@
               <td class="data" style="width: 30%" id="sex"></td>
             </tr>
             <tr>
-              <td class="title" style="width: 40%">ชื่อบัญชีผู้ใช้ไลน์</td>
+              <td class="title" style="width: 40%">ชือบัญชีผู้ใช้ไลน์</td>
               <td class="data" style="width: 30%">
                 <p id="displayName"></p>
               </td>
@@ -195,23 +195,23 @@
 
   
     <br>
-    <!-- consent -->
+    <!-- consen -->
     <div class="center">
       <div class="consent">
 
-        <input type="checkbox" id="myCheck_1" name="consent 1">ยอมรับ&nbsp;
-        <a class="modal-button" href="#Modal_consent1">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลทั่วไป</a>
+        <input type="checkbox" id="myCheck_1" name="consent1">ยอมรับ&nbsp;
+        <a class="modal-button" href="#myModal1">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลทั่วไป</a>
         <br>
 
 
 
-        <input type="checkbox" id="myCheck_2" name="consent 2">ยอมรับ&nbsp;
-        <a class="modal-button" href="#Modal_consent2">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลที่อ่อนไหว (Sensitive Personal
+        <input type="checkbox" id="myCheck_2" name="consent2">ยอมรับ&nbsp;
+        <a class="modal-button" href="#myModal2">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลที่อ่อนไหว (Sensitive Personal
           Data)</a>
         <br>
 
-        <input type="checkbox" id="myCheck_3" name="consent 3">ยอมรับ&nbsp;
-        <a class="modal-button" href="#Modal_consent3">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลทั่วไป</a>
+        <input type="checkbox" id="myCheck_3" name="consent3">ยอมรับ&nbsp;
+        <a class="modal-button" href="#myModal3">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลทั่วไป</a>
         <br>
       </div>
     </div>
@@ -232,7 +232,7 @@
 
 
   <!-- The Modal -->
-  <div id="Modal_consent1" class="modal">
+  <div id="myModal1" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -244,9 +244,9 @@
         <div class="detail">
           พิจารณาได้จากรูปแบบการดำเนินการ และวัตถุประสงค์การใช้ เก็บรวบรวมหรือเปิดเผยข้อมูลนั้น
           ซึ่งในแต่ละชุดข้อมูลก็มีรายละเอียดที่แตกต่างกัน ทั้งนี้ โดยหลักการตามกฎหมาย PDPA
-          ระบุว่าให้ใช้ฐานความยินยอม (consent) เป็นฐานหลักในการประมวลผลข้อมูล
+          ระบุว่าให้ใช้ฐานความยินยอม (Consent) เป็นฐานหลักในการประมวลผลข้อมูล
           เนื่องจากเปิดโอกาสให้เจ้าของข้อมูลส่วนบุคคลสามารถเลือกจัดการข้อมูลของตนเองได้เต็มที่
-          ในทางปฏิบัติแล้วผู้ควบคุมข้อมูลส่วนบุคคลอาจไม่สามารถใช้ฐานความยินยอม (consent)
+          ในทางปฏิบัติแล้วผู้ควบคุมข้อมูลส่วนบุคคลอาจไม่สามารถใช้ฐานความยินยอม (Consent)
           กับการขอใช้หรือเก็บรวบรวมกับข้อมูลทุกประเภทได้
           ซึ่งองค์กรแต่ละประเภทย่อมมีความจำเป็นในการอ้างอิงฐานตามกฎหมายแตกต่างกันไปตามลักษณะของธุรกรรมที่เกี่ยวข้องกับข้อมูลส่วนบุคคล
           โดยกฎหมาย PDPA
@@ -255,7 +255,7 @@
           ฐานภารกิจของรัฐ (Public Task), ฐานประโยชน์อันชอบธรรม (Legitimate Interest), ฐานจดหมายเหตุ วิจัย สถิติ
           (Scientific or Research) หากวัตถุประสงค์การใช้
           เก็บรวบรวมหรือเปิดเผยข้อมูลเข้าตามฐานการประมวลผล 5 ฐานนี้ ผู้ควบคุมข้อมูลส่วนบุคคลก็ไม่ต้องขอความยินยอม
-          (consent) จากเจ้าของข้อมูลอีก
+          (Consent) จากเจ้าของข้อมูลอีก
           ฐานการประมวลผลข้อมูลตามกฎหมาย (Lawful Basis) ของข้อมูลส่วนบุคคลทั่วไปที่ไม่ต้องขอความยินยอม (consent)
           มีดังนี้<br>
 
@@ -294,7 +294,7 @@
           <li>ฐานจดหมายเหตุ วิจัย สถิติ (Scientific or Research)
             การปฏิบัติตามฐานนี้อาจต้องอ้างอิงฐานตามกฎหมายอื่นประกอบด้วยว่าจะขอจัดเก็บข้อมูลเพื่อจัดทำเอกสารประวัติศาสตร์
             จดหมายเหตุ วิจัย สถิติ ตามวัตถุประสงค์หลักใด เช่น ขอเก็บตามฐานภารกิจของรัฐ (Public Task)
-            ฐานการปฏิบัติตามกฎหมาย (Legal Obligation) หรืออาจต้องอาศัยการตัดสินใจตามฐานความยินยอม (consent)
+            ฐานการปฏิบัติตามกฎหมาย (Legal Obligation) หรืออาจต้องอาศัยการตัดสินใจตามฐานความยินยอม (Consent)
             กับเจ้าของข้อมูล
           </li>
 
@@ -304,8 +304,8 @@
       <div class="modal-footer">
         <div class="center">
           <span class="close">
-            <button class="btn-consent" onclick="check_1()" id="btn">ยอมรับ</button>
-            <button class="btn-consent" onclick="uncheck_1()" id="btn">ปฏิเสธ</button>
+            <button class="btn-consen" onclick="check_1()" id="btn">ยอมรับ</button>
+            <button class="btn-consen" onclick="uncheck_1()" id="btn">ปฏิเสธ</button>
           </span>
         </div>
       </div>
@@ -314,7 +314,7 @@
   </div>
 
   <!-- The Modal -->
-  <div id="Modal_consent2" class="modal">
+  <div id="myModal2" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -330,7 +330,7 @@
           จะใช้ได้ต่อเมื่อไม่สามารถใช้ข้อมูลส่วนบุคคลทั่วไปทดแทนได้ ตัวอย่างเช่น
           การเก็บข้อมูลลายนิ้วมือของสมาชิกฟิตเนสเพื่อใช้ยืนยันตัวตนสมาชิก
           อาจเกินความจำเป็นเนื่องจาก ทางฟิตเนสสามารถใช้บัตรสมาชิกในการสแกนเข้าออกฟิตเนสแทนได้
-          กฎหมาย PDPA ได้ให้ข้อยกเว้นที่ไม่ต้องขอความยินยอม (consent) ในบางกรณีได้ ตัวอย่างเช่น
+          กฎหมาย PDPA ได้ให้ข้อยกเว้นที่ไม่ต้องขอความยินยอม (Consent) ในบางกรณีได้ ตัวอย่างเช่น
 
           <li>เมื่อมีเหตุจำเป็นเร่งด่วนเพื่อป้องกันหรือระงับอันตรายต่อชีวิต (Vital interest) ตัวอย่างเช่น
             เมื่อเจ้าของข้อมูลเกิดเหตุฉุกเฉินไม่รู้สึกตัว เจ้าหน้าที่กู้ชีพสามารถขอข้อมูลสุขภาพกับบุคคลใกล้ชิดได้
@@ -356,8 +356,8 @@
       <div class="modal-footer">
         <div class="center">
           <span class="close">
-            <button class="btn-consent" onclick="check_2()" id="btn">ยอมรับ</button>
-            <button class="btn-consent" onclick="uncheck_2()" id="btn">ปฏิเสธ</button>
+            <button class="btn-consen" onclick="check_2()" id="btn">ยอมรับ</button>
+            <button class="btn-consen" onclick="uncheck_2()" id="btn">ปฏิเสธ</button>
           </span>
         </div>
       </div>
@@ -367,7 +367,7 @@
 
 
   <!-- The Modal -->
-  <div id="Modal_consent3" class="modal">
+  <div id="myModal3" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -379,9 +379,9 @@
         <div class="detail">
           พิจารณาได้จากรูปแบบการดำเนินการ และวัตถุประสงค์การใช้ เก็บรวบรวมหรือเปิดเผยข้อมูลนั้น
           ซึ่งในแต่ละชุดข้อมูลก็มีรายละเอียดที่แตกต่างกัน ทั้งนี้ โดยหลักการตามกฎหมาย PDPA
-          ระบุว่าให้ใช้ฐานความยินยอม (consent) เป็นฐานหลักในการประมวลผลข้อมูล
+          ระบุว่าให้ใช้ฐานความยินยอม (Consent) เป็นฐานหลักในการประมวลผลข้อมูล
           เนื่องจากเปิดโอกาสให้เจ้าของข้อมูลส่วนบุคคลสามารถเลือกจัดการข้อมูลของตนเองได้เต็มที่
-          ในทางปฏิบัติแล้วผู้ควบคุมข้อมูลส่วนบุคคลอาจไม่สามารถใช้ฐานความยินยอม (consent)
+          ในทางปฏิบัติแล้วผู้ควบคุมข้อมูลส่วนบุคคลอาจไม่สามารถใช้ฐานความยินยอม (Consent)
           กับการขอใช้หรือเก็บรวบรวมกับข้อมูลทุกประเภทได้
           ซึ่งองค์กรแต่ละประเภทย่อมมีความจำเป็นในการอ้างอิงฐานตามกฎหมายแตกต่างกันไปตามลักษณะของธุรกรรมที่เกี่ยวข้องกับข้อมูลส่วนบุคคล
           โดยกฎหมาย PDPA
@@ -390,7 +390,7 @@
           ฐานภารกิจของรัฐ (Public Task), ฐานประโยชน์อันชอบธรรม (Legitimate Interest), ฐานจดหมายเหตุ วิจัย สถิติ
           (Scientific or Research) หากวัตถุประสงค์การใช้
           เก็บรวบรวมหรือเปิดเผยข้อมูลเข้าตามฐานการประมวลผล 5 ฐานนี้ ผู้ควบคุมข้อมูลส่วนบุคคลก็ไม่ต้องขอความยินยอม
-          (consent) จากเจ้าของข้อมูลอีก
+          (Consent) จากเจ้าของข้อมูลอีก
           ฐานการประมวลผลข้อมูลตามกฎหมาย (Lawful Basis) ของข้อมูลส่วนบุคคลทั่วไปที่ไม่ต้องขอความยินยอม (consent)
           มีดังนี้<br>
 
@@ -429,7 +429,7 @@
           <li>ฐานจดหมายเหตุ วิจัย สถิติ (Scientific or Research)
             การปฏิบัติตามฐานนี้อาจต้องอ้างอิงฐานตามกฎหมายอื่นประกอบด้วยว่าจะขอจัดเก็บข้อมูลเพื่อจัดทำเอกสารประวัติศาสตร์
             จดหมายเหตุ วิจัย สถิติ ตามวัตถุประสงค์หลักใด เช่น ขอเก็บตามฐานภารกิจของรัฐ (Public Task)
-            ฐานการปฏิบัติตามกฎหมาย (Legal Obligation) หรืออาจต้องอาศัยการตัดสินใจตามฐานความยินยอม (consent)
+            ฐานการปฏิบัติตามกฎหมาย (Legal Obligation) หรืออาจต้องอาศัยการตัดสินใจตามฐานความยินยอม (Consent)
             กับเจ้าของข้อมูล
           </li>
 
@@ -439,8 +439,8 @@
       <div class="modal-footer">
         <div class="center">
           <span class="close">
-            <button class="btn-consent" onclick="check_3()" id="btn">ยอมรับ</button>
-            <button class="btn-consent" onclick="uncheck_3()" id="btn">ปฏิเสธ</button>
+            <button class="btn-consen" onclick="check_3()" id="btn">ยอมรับ</button>
+            <button class="btn-consen" onclick="uncheck_3()" id="btn">ปฏิเสธ</button>
           </span>
         </div>
       </div>

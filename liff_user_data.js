@@ -40,10 +40,7 @@ function getUserProfileforUserData() {
   document.getElementById("district").value = obj.district;
 
 
-  const obj_index = JSON.parse(txt);
-  document.getElementById("name").innerHTML = obj_index.name;
-  document.getElementById("phone").innerHTML = obj_index.phone;
-  document.getElementById("bdate").innerHTML = obj_index.bdate;
+
 
 
 

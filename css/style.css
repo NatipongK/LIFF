@@ -267,7 +267,7 @@ select#day {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 4px;
 }
 
 /* Track */

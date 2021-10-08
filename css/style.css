@@ -22,7 +22,7 @@ body {
 
 /* ช่องใส่ข้อมูลผู้ใช้ */
 input[type="text"] {
-  width: 50%; /* ความกว้าง */
+  width: 70%; /* ความกว้าง */
   height: 30px; /* ความสูง */
   margin: 8px 0;
   padding: 5px;
@@ -33,7 +33,7 @@ input[type="text"] {
 }
 
 input[type="number"] {
-  width: 50%; /* ความกว้าง */
+  width: 70%; /* ความกว้าง */
   height: 30px; /* ความสูง */
   padding: 5px;
   margin: 8px 0;
@@ -44,7 +44,7 @@ input[type="number"] {
 }
 
 input[type="email"] {
-  width: 50%; /* ความกว้าง */
+  width: 70%; /* ความกว้าง */
   height: 30px; /* ความสูง */
   padding: 5px;
   margin: 8px 0;
@@ -55,10 +55,10 @@ input[type="email"] {
 }
 
 select {
-  width: 29%; /* ความกว้าง */
+  width: 30%; /* ความกว้าง */
   height: 30px; /* ความสูง */
   padding: 5px;
-  margin: 8px 2px;
+  margin: 8px 1px;
   display: inline-block;
   border: 1px solid #ccc; /* สีกรอบ */
   border-radius: 4px; /* ความโค้ง */

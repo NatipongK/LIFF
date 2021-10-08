@@ -30,9 +30,7 @@ function getUserProfileforUserData() {
   document.getElementById("id").innerHTML = obj.id;
   document.getElementById("scheme").innerHTML = obj.scheme;
   document.getElementById("sex").innerHTML = obj.sex;
-  document.getElementById("name").innerHTML = obj.name;
-  document.getElementById("phone").innerHTML = obj.phone;
-  document.getElementById("bdate").innerHTML = obj.bdate;
+  
 
   document.getElementById("name").value = obj.name;
   document.getElementById("phone").value = obj.phone;
@@ -40,6 +38,14 @@ function getUserProfileforUserData() {
   document.getElementById("province").value = obj.province;
   document.getElementById("postcode").value = obj.postcode;
   document.getElementById("district").value = obj.district;
+
+
+  const obj_index = JSON.parse(txt);
+  document.getElementById("name").innerHTML = obj.name;
+  document.getElementById("phone").innerHTML = obj.phone;
+  document.getElementById("bdate").innerHTML = obj.bdate;
+
+
 
   function handleSubmit(event) {
     event.preventDefault();

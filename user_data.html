@@ -177,11 +177,11 @@
             </tr>
             <tr>
               <td class="title" style="width: 30%">รหัสไปรษณีย์</td>
-              <td class="data" style="width: 70%" ><input type="number" id="postcode" name="postcode" /></td>
+              <td class="data" style="width: 70%" ><input type="text" id="postcode" name="postcode" /></td>
             </tr>
             <tr>
               <td class="title" style="width: 30%">เบอร์โทรศัพท์ </td>
-              <td class="data" style="width: 70%"><input type="number" id="phone" name="phone" /></td>
+              <td class="data" style="width: 70%"><input type="text" id="phone" name="phone" /></td>
             </tr>
             <tr>
               <td class="title" style="width: 30%">อีเมล </td>
@@ -200,18 +200,18 @@
       <div class="consent">
 
         <input type="checkbox" id="myCheck_1" name="consent1">ยอมรับ&nbsp;
-        <a class="modal-button" href="#myModal1">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลทั่วไป</a>
+        <a class="modal-button" href="#Modal-consent1">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลทั่วไป</a>
         <br>
 
 
 
         <input type="checkbox" id="myCheck_2" name="consent2">ยอมรับ&nbsp;
-        <a class="modal-button" href="#myModal2">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลที่อ่อนไหว (Sensitive Personal
+        <a class="modal-button" href="#Modal-consent2">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลที่อ่อนไหว (Sensitive Personal
           Data)</a>
         <br>
 
         <input type="checkbox" id="myCheck_3" name="consent3">ยอมรับ&nbsp;
-        <a class="modal-button" href="#myModal3">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลทั่วไป</a>
+        <a class="modal-button" href="#Modal-consent3">การใช้ฐานการประมวลผลข้อมูลส่วนบุคคลทั่วไป</a>
         <br>
       </div>
     </div>
@@ -232,7 +232,7 @@
 
 
   <!-- The Modal -->
-  <div id="myModal1" class="modal">
+  <div id="Modal-consent1" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -304,8 +304,8 @@
       <div class="modal-footer">
         <div class="center">
           <span class="close">
-            <button class="btn-consen" onclick="check_1()" id="btn">ยอมรับ</button>
-            <button class="btn-consen" onclick="uncheck_1()" id="btn">ปฏิเสธ</button>
+            <button class="btn-Modal-consent" onclick="check_1()" id="btn">ยอมรับ</button>
+            <button class="btn-consent" onclick="uncheck_1()" id="btn">ปฏิเสธ</button>
           </span>
         </div>
       </div>
@@ -314,7 +314,7 @@
   </div>
 
   <!-- The Modal -->
-  <div id="myModal2" class="modal">
+  <div id="Modal-consent2" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -356,8 +356,8 @@
       <div class="modal-footer">
         <div class="center">
           <span class="close">
-            <button class="btn-consen" onclick="check_2()" id="btn">ยอมรับ</button>
-            <button class="btn-consen" onclick="uncheck_2()" id="btn">ปฏิเสธ</button>
+            <button class="btn-consent" onclick="check_2()" id="btn">ยอมรับ</button>
+            <button class="btn-consent" onclick="uncheck_2()" id="btn">ปฏิเสธ</button>
           </span>
         </div>
       </div>
@@ -367,7 +367,7 @@
 
 
   <!-- The Modal -->
-  <div id="myModal3" class="modal">
+  <div id="Modal-consent3" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -439,8 +439,8 @@
       <div class="modal-footer">
         <div class="center">
           <span class="close">
-            <button class="btn-consen" onclick="check_3()" id="btn">ยอมรับ</button>
-            <button class="btn-consen" onclick="uncheck_3()" id="btn">ปฏิเสธ</button>
+            <button class="btn-consent" onclick="check_3()" id="btn">ยอมรับ</button>
+            <button class="btn-consent" onclick="uncheck_3()" id="btn">ปฏิเสธ</button>
           </span>
         </div>
       </div>

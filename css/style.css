@@ -224,6 +224,7 @@ select#day {
 
 /* Modal Content */
 .modal-content {
+  max-width: 500px;
     position: relative;
     background-color: #fefefe;/* สีพื้นหลัง */
     margin: auto;

@@ -1,12 +1,21 @@
-function getUserProfile() {
+function getUserProfileforUserData() {
     liff.getProfile().then(profile => {
       document.getElementById("displayName").innerHTML = profile.displayName;//get user line name
       document.getElementById("email").value = liff.getDecodedIDToken().email;//get line email
     }).catch(err => console.error(err));
   }
+
+  function getUserProfileforIndex() {
+    liff.getProfile().then(profile => {
+      document.getElementById("pictureUrl").src = profile.pictureUrl;//get user line picture
+      document.getElementById("displayName").innerHTML = profile.displayName;//get user line name
+      document.getElementById("getDecodedIDToken").innerHTML = liff.getDecodedIDToken().email;//get user line email
+    }).catch(err => console.error(err));
+  }
   liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {
     if (liff.isLoggedIn()) {
-      getUserProfile()
+      getUserProfileforIndex()
+      getUserProfileforUserData()
     } else {
       liff.login();
     }

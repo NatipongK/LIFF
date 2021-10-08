@@ -41,9 +41,9 @@ function getUserProfileforUserData() {
 
 
   const obj_index = JSON.parse(txt);
-  document.getElementById("name").innerHTML = obj.name;
-  document.getElementById("phone").innerHTML = obj.phone;
-  document.getElementById("bdate").innerHTML = obj.bdate;
+  document.getElementById("name").innerHTML = obj_index.name;
+  document.getElementById("phone").innerHTML = obj_index.phone;
+  document.getElementById("bdate").innerHTML = obj_index.bdate;
 
 
 

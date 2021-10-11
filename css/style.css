@@ -1,10 +1,12 @@
 /* พื้นหลัง */
 body {
-  background-color: #ffff;  /* สีพื้นหลัง */
+  background-color: rgb(145, 145, 145);  /* สีพื้นหลัง */
   margin: auto;
   max-width: 500px;
 }
-
+div#area{
+  background-color: #ffff;
+}
 /* ภาพผู้ใช้ไลน์ */
 #pictureUrl {
   display: block;

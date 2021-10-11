@@ -55,6 +55,9 @@ document.getElementById("sex").innerHTML = obj.sex;
 
 
 document.getElementById("name").value = obj.name;
+document.getElementById("day").value = obj.day;
+document.getElementById("month").value = obj.month;
+document.getElementById("year").value = obj.year;
 document.getElementById("phone").value = obj.phone;
 document.getElementById("address").value = obj.address;
 document.getElementById("province").value = obj.province;

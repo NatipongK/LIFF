@@ -171,9 +171,9 @@ myObj_consent = {
           text_consent = localStorage.getItem("JSONdata_consent")//;เรียกใช้ข้อมูล key ของ Local Storage
           obj_consent = JSON.parse(text_consent); //เปลี่ยนสตริงของข้อความ JSON เป็นวัตถุ JavaScript
 
-          document.getElementById("consent1").innerHTML = obj_consent .name;
-          document.getElementById("consent2").innerHTML = obj_consent .phone;
-          document.getElementById("consent3").innerHTML = obj_consent .bdate;
+          document.getElementById("consent1").innerHTML = obj_consent.consent1;
+          document.getElementById("consent2").innerHTML = obj_consent.consent2;
+          document.getElementById("consent3").innerHTML = obj_consent.consent3;
 
 
 function handleSubmit(event) {

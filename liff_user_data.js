@@ -35,7 +35,7 @@ localStorage.setItem("testJSON", myJSON);
 text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
 document.getElementById("name").innerHTML = obj.name;
-document.getElementById("phone").innerHTML = obj.name;
+document.getElementById("phone").innerHTML = obj.phone;
 document.getElementById("bdate").innerHTML = obj.bdate;
 document.getElementById("card").innerHTML = obj.card;
 document.getElementById("account").innerHTML = obj.account;

@@ -12,22 +12,26 @@ function getUserProfileforIndex() {
     document.getElementById("getDecodedIDToken").innerHTML = liff.getDecodedIDToken().email;//get user line email
   }).catch(err => console.error(err));
 }
+
+
+
 liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {
   if (liff.isLoggedIn()) {
     getUserProfileforIndex()
     getUserProfileforUserData()
   } else {
     liff.login();
-    btnlogOut.style.display = "block"
+ 
   }
 }, err => console.error(err.code, error.message));
 
 const btnlogOut = document.getElementById("btnlogOut");
-// function InExternalBrowser(){
-//   if(liff.getOS() === "web"){
-//     btnlogOut.style.display = "block"
-//   }
-// }
+function InExternalBrowser(){
+  if(liff.getOS() === "web"){ 
+    btnlogOut.style.display = "block"
+  }
+ 
+}
 
 function logOut() {
   liff.logout()
@@ -56,9 +60,6 @@ document.getElementById("sex").innerHTML = obj.sex;
 
 
 document.getElementById("name").value = obj.name;
-document.getElementById("day").value = obj.day;
-document.getElementById("month").value = obj.month;
-document.getElementById("year").value = obj.year;
 document.getElementById("phone").value = obj.phone;
 document.getElementById("address").value = obj.address;
 document.getElementById("province").value = obj.province;

@@ -21,6 +21,12 @@ liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {
   }
 }, err => console.error(err.code, error.message));
 
+function InExternalBrowser(){
+  if(liff.getOS() === "web"){
+    btnlogOut.style.display = "block"
+  }
+}
+
 function logOut() {
   liff.logout()
   window.location.reload()

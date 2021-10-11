@@ -8,6 +8,8 @@ div#area{
   background-color: #ffff;
   height: 100%;
 }
+
+
 /* ภาพผู้ใช้ไลน์ */
 #pictureUrl {
   display: block;
@@ -136,6 +138,31 @@ select#day {
   transform: translateX(4px);
 }
 
+#btnlogOut{
+  display: none;
+  background-color: #3a2f8f;/* สีพื้นหลัง */
+  border: none;
+  width: 115px;
+  border-radius: 6px;
+  color: white;/* สีตัวอักษร */
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* ลักษณะของเงา */
+  box-sizing: content-box;
+  height: 40px;
+}
+
+#btnlogOut:active {
+  background: #302675;/* สีพื้นหลัง */
+  transform: translateY(4px);
+  transform: translateX(4px);
+}
 /* ลักษณะของข้อผู้ใช้ */
 .user_data {
   background: #ffffff;/* สีพื้นหลัง */

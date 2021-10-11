@@ -75,7 +75,7 @@ select {
   background-color: #ffffff;/* สีพื้นหลัง */
 }
 
-select#day_user_data {
+select#day {
   width: 20%; /* ความกว้าง */
   height: 30px; /* ความสูง */
   padding: 5px;

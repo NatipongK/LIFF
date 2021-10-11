@@ -26,25 +26,49 @@ function getUserProfileforUserData() {
     window.location.reload()
   }
 
- 
+ //Storing data:
+myObj = { "card":"01", "account":"a01", "contact":"c01","id":"id01", "scheme":"s01","name":"สุขใจ มีสุข","bdate":"1 มีนาคม 2000", "address":"162 ต.บ้านสวน","phone":"0845649155", "sex":"ชาย", "district":"เมือง", "province":"ชลบุรี", "postcode":"20000" };
+myJSON = JSON.stringify(myObj);
+localStorage.setItem("testJSON", myJSON);
 
-    const txt = '{"card":"01", "account":"a01", "contact":"c01","id":"id01", "scheme":"s01","name":"สุขใจ มีสุข","bdate":"1 มีนาคม 2000", "address":"162 ต.บ้านสวน","phone":"0845649155", "sex":"ชาย", "district":"เมือง", "province":"ชลบุรี", "postcode":"20000"}'
-    const obj = JSON.parse(txt);
+//Retrieving data:
+text = localStorage.getItem("testJSON");
+obj = JSON.parse(text);
+document.getElementById("name").innerHTML = obj.name;
+document.getElementById("phone").innerHTML = obj.name;
+document.getElementById("bdate").innerHTML = obj.bdate;
+document.getElementById("card").innerHTML = obj.card;
+document.getElementById("account").innerHTML = obj.account;
+document.getElementById("contact").innerHTML = obj.contact;
+document.getElementById("id").innerHTML = obj.id;
+document.getElementById("scheme").innerHTML = obj.scheme;
+document.getElementById("sex").innerHTML = obj.sex;
 
-  document.getElementById("card").innerHTML = obj.card;
-  document.getElementById("account").innerHTML = obj.account;
-  document.getElementById("contact").innerHTML = obj.contact;
-  document.getElementById("id").innerHTML = obj.id;
-  document.getElementById("scheme").innerHTML = obj.scheme;
-  document.getElementById("sex").innerHTML = obj.sex;
+
+document.getElementById("name").value = obj.name;
+document.getElementById("phone").value = obj.phone;
+document.getElementById("address").value = obj.address;
+document.getElementById("province").value = obj.province;
+document.getElementById("postcode").value = obj.postcode;
+document.getElementById("district").value = obj.district;
+
+  //   const txt = '{"card":"01", "account":"a01", "contact":"c01","id":"id01", "scheme":"s01","name":"สุขใจ มีสุข","bdate":"1 มีนาคม 2000", "address":"162 ต.บ้านสวน","phone":"0845649155", "sex":"ชาย", "district":"เมือง", "province":"ชลบุรี", "postcode":"20000"}'
+  //   const obj = JSON.parse(txt);
+
+  // document.getElementById("card").innerHTML = obj.card;
+  // document.getElementById("account").innerHTML = obj.account;
+  // document.getElementById("contact").innerHTML = obj.contact;
+  // document.getElementById("id").innerHTML = obj.id;
+  // document.getElementById("scheme").innerHTML = obj.scheme;
+  // document.getElementById("sex").innerHTML = obj.sex;
   
 
-  document.getElementById("name").value = obj.name;
-  document.getElementById("phone").value = obj.phone;
-  document.getElementById("address").value = obj.address;
-  document.getElementById("province").value = obj.province;
-  document.getElementById("postcode").value = obj.postcode;
-  document.getElementById("district").value = obj.district;
+  // document.getElementById("name").value = obj.name;
+  // document.getElementById("phone").value = obj.phone;
+  // document.getElementById("address").value = obj.address;
+  // document.getElementById("province").value = obj.province;
+  // document.getElementById("postcode").value = obj.postcode;
+  // document.getElementById("district").value = obj.district;
 
   
 

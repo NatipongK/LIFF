@@ -21,6 +21,7 @@ liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {
   }
 }, err => console.error(err.code, error.message));
 
+const btnlogOut = document.getElementById(btnlogOut);
 function InExternalBrowser(){
   if(liff.getOS() === "web"){
     btnlogOut.style.display = "block"
@@ -33,7 +34,7 @@ function logOut() {
 }
 
 //Storing data:
-myObj = { "card": "01", "account": "a01","contact": "c01", "id": "id01", "scheme": "s01", "name": "สุขใจ มีสุข", "bdate": "1 มีนาคม 2000", "address": "162 ต.บ้านสวน", "phone": "0845649155", "sex": "ชาย", "district": "เมือง", "province": "ชลบุรี", "postcode": "20000" };
+myObj = { "card": "01", "account": "a01","contact": "c01", "id": "id01", "scheme": "s01", "name": "สุขใจ มีสุข", "day": "1","month":"มีนาคม","year":"2000", "address": "162 ต.บ้านสวน", "phone": "0845649155", "sex": "ชาย", "district": "เมือง", "province": "ชลบุรี", "postcode": "20000" };
 myJSON = JSON.stringify(myObj); //เก็บข้อความ JSON ในสตริง
 localStorage.setItem("JSONdata", myJSON);//เก็บข้อมูลลงใน Local Storage
 
@@ -42,7 +43,9 @@ text = localStorage.getItem("JSONdata")//;เรียกใช้ข้อม�
 obj = JSON.parse(text); //เปลี่ยนสตริงของข้อความ JSON เป็นวัตถุ JavaScript 
 document.getElementById("name").innerHTML = obj.name;
 document.getElementById("phone").innerHTML = obj.phone;
-document.getElementById("bdate").innerHTML = obj.bdate;
+document.getElementById("day").innerHTML = obj.day;
+document.getElementById("month").innerHTML = obj.month;
+document.getElementById("year").innerHTML = obj.year;
 document.getElementById("card").innerHTML = obj.card;
 document.getElementById("account").innerHTML = obj.account;
 document.getElementById("contact").innerHTML = obj.contact;

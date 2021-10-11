@@ -22,7 +22,7 @@ liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {
   }
 }, err => console.error(err.code, error.message));
 
-// const btnlogOut = document.getElementById("btnlogOut");
+const btnlogOut = document.getElementById("btnlogOut");
 // function InExternalBrowser(){
 //   if(liff.getOS() === "web"){
 //     btnlogOut.style.display = "block"

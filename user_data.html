@@ -10,7 +10,7 @@
 
 <body>
   <div id="area_user_data">
-  <form >
+  <form onsubmit="submitForm(event)">
     <!-- Head  -->
     <div class="center">
       <div class="head">
@@ -326,7 +326,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 
-<script src="liff_user_data.js"></script>
+<!-- <script src="liff_user_data.js"></script> -->
 
    
+  <script>
+
+function submitForm(event) {
+  // Prevent the form from submitting.
+  event.preventDefault()
+  // Set url for submission and collect data.
   
+  const formData = new FormData(event.target)
+  // Build the data object.
+  const data = {}
+  const x=formData.forEach((value, key) => (data[key] = value))
+  // Log the data.
+  console.log(data)
+  alert(x)
+}
+</script>

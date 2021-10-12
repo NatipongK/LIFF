@@ -49,6 +49,7 @@ obj = JSON.parse(text); //เปลี่ยนสตริงของข้อ
 document.getElementById("name").innerHTML = obj.name;
 document.getElementById("phone").innerHTML = obj.phone;
 document.getElementById("day").innerHTML = obj.day;
+document.getElementById("day").innerHTML = '<option value="'+obj.day+'"</option>';
 document.getElementById("month").innerHTML = obj.month;
 document.getElementById("year").innerHTML = obj.year;
 document.getElementById("card").innerHTML = obj.card;

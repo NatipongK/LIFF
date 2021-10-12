@@ -27,8 +27,7 @@ liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {
 const btnlogOut = document.getElementById("btnlogOut");
 
 
-// Edge 20+
-var isEdge = !isIE && !!window.StyleMedia;
+
 
 // Chrome 1 - 79
 var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);

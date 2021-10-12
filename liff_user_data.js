@@ -39,7 +39,7 @@ function logOut() {
 }
 
 //Storing data:
-myObj = { "card": "01", "account": "a01","contact": "c01", "id": "id01", "scheme": "s01", "name": "สุขใจ มีสุข", "bdate": "1 มีนาคม 2000", "address": "162 ต.บ้านสวน", "phone": "0845649155", "sex": "ชาย", "district": "เมือง", "province": "ชลบุรี", "postcode": "20000" };
+myObj = { "card": "01", "account": "a01","contact": "c01", "id": "id01", "scheme": "s01", "name": "สุขใจ มีสุข", "bdate": "1 มีนาคม 2000", "address": "162 ต.บ้านสวน", "phone": "0845649155", "sex": "ชาย", "district": "เมือง", "province": "ชลบุรี", "postcode": "20000", recordType : 'object'};
 myJSON = JSON.stringify(myObj); //เก็บข้อความ JSON ในสตริง
 localStorage.setItem("JSONdata", myJSON);//เก็บข้อมูลลงใน Local Storage
 

@@ -38,9 +38,9 @@ if(isChrome='true' ){
   btnlogOut.style.display = "block"
 }
 
-if(isEdge='true' ){
-  btnlogOut.style.display = "block"
-}
+// if(isEdge='true' ){
+//   btnlogOut.style.display = "block"
+// }
 
 
 function logOut() {

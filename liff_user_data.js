@@ -39,7 +39,7 @@ function logOut() {
 }
 
 //Storing data:
-myObj = { "card": "01", "account": "a01","contact": "c01", "id": "id01", "scheme": "s01", "name": "สุขใจ มีสุข", "day": "1","month":"มีนาคม","year":"2000", "address": "162 ต.บ้านสวน", "phone": "0845649155", "sex": "ชาย", "district": "เมือง", "province": "ชลบุรี", "postcode": "20000" };
+myObj = { "card": "01", "account": "a01","contact": "c01", "id": "id01", "scheme": "s01", "name": "สุขใจ มีสุข", "bdate": "1 มีนาคม 2000", "address": "162 ต.บ้านสวน", "phone": "0845649155", "sex": "ชาย", "district": "เมือง", "province": "ชลบุรี", "postcode": "20000" };
 myJSON = JSON.stringify(myObj); //เก็บข้อความ JSON ในสตริง
 localStorage.setItem("JSONdata", myJSON);//เก็บข้อมูลลงใน Local Storage
 
@@ -49,7 +49,6 @@ obj = JSON.parse(text); //เปลี่ยนสตริงของข้อ
 document.getElementById("name").innerHTML = obj.name;
 document.getElementById("phone").innerHTML = obj.phone;
 document.getElementById("day").innerHTML = obj.day;
-document.getElementById("day").innerHTML = '<option value="'+obj.day+'"</option>';
 document.getElementById("month").innerHTML = obj.month;
 document.getElementById("year").innerHTML = obj.year;
 document.getElementById("card").innerHTML = obj.card;
@@ -61,7 +60,6 @@ document.getElementById("sex").innerHTML = obj.sex;
 
 
 document.getElementById("name").value = obj.name;
-document.getElementById("day").value = '<option value="'+obj.day+'"</option>';
 document.getElementById("phone").value = obj.phone;
 document.getElementById("address").value = obj.address;
 document.getElementById("province").value = obj.province;

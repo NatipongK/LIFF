@@ -21,12 +21,12 @@ liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {
     getUserProfileforUserData()
   } else {
     liff.login();
-    if(liff.getOS() === "web"){ 
-      btnlogOut.style.display = "block"
-    }
+    
   }
 }, err => console.error(err.code, error.message));
-
+if(liff.isInClient() === false){ 
+  btnlogOut.style.display = "block"
+}
 const btnlogOut = document.getElementById("btnlogOut");
 // // Opera 8.0+
 // var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;

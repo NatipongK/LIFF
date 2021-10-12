@@ -21,9 +21,6 @@ liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {
     getUserProfileforUserData()
   } else {
     liff.login();
-    if(liff.getOS() === "web"){ 
-      btnlogOut.style.display = "block"
-    }
   }
 }, err => console.error(err.code, error.message));
 
@@ -53,6 +50,24 @@ var isEdgeChromium = isChrome && (navigator.userAgent.indexOf("Edg") != -1);
 var isBlink = (isChrome || isOpera) && !!window.CSS;
 
 if(isChrome='true' ){
+  btnlogOut.style.display = "block"
+}
+if (isOpera='true' ){
+  btnlogOut.style.display = "block"
+}
+if(isFirefox='true' ){
+  btnlogOut.style.display = "block"
+}
+if(isSafari='true' ){
+  btnlogOut.style.display = "block"
+}
+if(isIE='true' ){
+  btnlogOut.style.display = "block"
+}
+if(sEdgeChromium='true' ){
+  btnlogOut.style.display = "block"
+}
+if(isBlink='true' ){
   btnlogOut.style.display = "block"
 }
 

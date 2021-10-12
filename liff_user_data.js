@@ -25,7 +25,7 @@ liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {
   }
 }, err => console.error(err.code, error.message));
 if(liff.isInClient() === false){ 
-  btnlogOut.style.display = "block"
+  btnlogOut.style.display = "block";
 }
 const btnlogOut = document.getElementById("btnlogOut");
 // // Opera 8.0+

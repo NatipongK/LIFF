@@ -60,6 +60,7 @@ document.getElementById("sex").innerHTML = obj.sex;
 
 
 document.getElementById("name").value = obj.name;
+document.getElementById("day").value = '<option value="'+obj.day+'"</option>';
 document.getElementById("phone").value = obj.phone;
 document.getElementById("address").value = obj.address;
 document.getElementById("province").value = obj.province;

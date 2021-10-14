@@ -17,7 +17,7 @@ function displayIsInClientInfo() {
   if (liff.isInClient()) {
     document.getElementById("btnlogOut").style.visibility = "hidden";
   } else {
-    document.getElementById("test").style.display = "none";
+    document.getElementById("btnlogOut").style.display = "none";
   }
 }
 

@@ -26,6 +26,7 @@ liff.init({ liffId: "1656217711-49Bo7QWy" }, () => {
   if (liff.isLoggedIn()) {
     getUserProfileforIndex()
     getUserProfileforUserData()
+    displayIsInClientInfo()
   } else {
     liff.login();
     

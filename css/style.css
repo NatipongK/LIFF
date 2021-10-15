@@ -141,6 +141,7 @@ select#day {
 }
 
 #btnlogOut{
+  display: none;
   background-color: #3a2f8f;/* สีพื้นหลัง */
   border: none;
   width: 115px;

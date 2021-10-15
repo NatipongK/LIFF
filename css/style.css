@@ -6,7 +6,7 @@ body {
 }
 div#area{
   background-color: #ffff;
-  height: 850px;
+  height: 100%;
 }
 div#area_user_data{
   background-color: #ffff;

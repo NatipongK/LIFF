@@ -15,9 +15,8 @@ function getUserProfileforIndex() {
 
 function displayIsInClientInfo() {
   if (liff.isInClient()) {
-    document.getElementById("btnlogOut").style.display = "block";
+    document.getElementById("button-logOut").innerHTML += '<button id="btnlogOut" onclick="logOut()">Log Out</button>';
   } 
-  document.getElementById("btnlogOut").style.display = "none";
 }
 
 

@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport"
@@ -6,15 +7,16 @@
   <title>My LIFF App</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
   <div id="area">
-     <!-- Logo -->
+    <!-- Logo -->
     <div class="center">
       <img src="logo/logo.png" width="90%" height="140" />
     </div>
     <br>
 
-      <!-- Head  -->
+    <!-- Head  -->
     <div class="center">
       <div class="head">
         <p>Avision LIFF</p>
@@ -24,12 +26,12 @@
 
     <!-- Line Picture -->
     <div class="center">
-      
-        <img id="pictureUrl" />
-   
+
+      <img id="pictureUrl" />
+
     </div>
     <br>
-    
+
     <!-- การ์ดข้อมูลส่วนตัว -->
     <div class="center">
       <div class="user_data">
@@ -52,11 +54,15 @@
             </tr>
             <tr>
               <td class="title" style="width: 40%">อีเมล</td>
-              <td class="data" style="width: 60%"><p id="getDecodedIDToken"></p></td>
+              <td class="data" style="width: 60%">
+                <p id="getDecodedIDToken"></p>
+              </td>
             </tr>
             <tr>
               <td class="title" style="width: 40%">ชื่อบัญชีผู้ใช้ไลน์</td>
-              <td class="data" style="width: 60%"><p id="displayName"></p></td>
+              <td class="data" style="width: 60%">
+                <p id="displayName"></p>
+              </td>
             </tr>
           </table>
         </div>
@@ -64,22 +70,22 @@
     </div>
     <br>
 
-<!-- button -->
+    <!-- button -->
     <div>
       <div class="center">
         <button class="button" onclick="location.href='user_data.html'">จัดการข้อมูลสมาชิก</button>
         <button class="button" onclick="location.href='contact.html'">ติดต่อ</button>
       </div>
       <div class="center">
-        <div  id="button-logOut"></div>
-      
+        <div id="button-logOut"></div>
+
       </div>
     </div>
   </div>
 </body>
+
 </html>
 
 
 <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-<script src="liff_user_data.js"></script>
-
+<script src="liff.js"></script>

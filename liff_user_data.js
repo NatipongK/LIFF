@@ -14,10 +14,10 @@ function getUserProfileforIndex() {
 }
 
 function displayIsInClientInfo() {
-  if (liff.isInClient()) {
-    
+  if (!liff.isInClient()) {
+    document.getElementById("button-logOut").innerHTML += '<button id="btnlogOut" onclick="logOut()">Log Out</button>';
   } 
-  document.getElementById("button-logOut").innerHTML += '<button id="btnlogOut" onclick="logOut()">Log Out</button>';
+  
 }
 
 

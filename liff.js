@@ -15,7 +15,7 @@ function getUserProfileforIndex() {
 
 function displayIsInClientInfo() {
   if (!liff.isInClient()) {//ถ้าไม่ได้ด้วย LINE จะแสดงปุ่ม logOut
-    document.getElementById("button-logOut").innerHTML += '<button id="btnlogOut" onclick="logOut()">Log Out</button><div style=padding:100px;"></div>';
+    document.getElementById("button-logOut").innerHTML += '<button id="btnlogOut" onclick="logOut()">Log Out</button>';
   }
 
 }
